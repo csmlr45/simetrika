@@ -9,29 +9,29 @@ L = {
 "hero_cta":"Demander un devis","hero_secondary":"Découvrir nos services","trust1":"Accompagnement personnalisé","trust2":"Solutions sur mesure","trust3":"Coordination des travaux",
 "services_kicker":"NOS SERVICES","services_title":"Des solutions adaptées à chaque projet.",
 "services_intro":"De la transformation complète d’un intérieur aux travaux extérieurs et aux interventions plus ciblées, Simetrika vous accompagne avec une approche personnalisée.",
-"s1":"Rénovation intérieure","s1d":"Salle de bain, cuisine, pièces de vie, chambres, escaliers, électricité, plomberie et plafonds — pour créer un intérieur à votre image.",
-"s2":"Rénovation extérieure","s2d":"Façades, fenêtres et toiture : des interventions pensées pour redonner vie à votre extérieur en associant esthétique et durabilité.",
-"s3":"Petits travaux & aménagement","s3d":"Peinture, enduits, carrelage, pose de sols, plancher et stratifié, ainsi que des solutions d’aménagement adaptées à vos besoins.",
+"s1":"Rénovation intérieure","s1d":"Transformation et rénovation de cuisines, salles de bain, pièces de vie, chambres et escaliers, avec une attention particulière portée aux finitions et à la fonctionnalité.",
+"s2":"Rénovation extérieure","s2d":"Rénovation et amélioration de l’extérieur de votre bâtiment : façade, fenêtres et toiture, avec des solutions adaptées à l’état du bâtiment et à votre projet.",
+"s3":"Petits travaux & aménagement","s3d":"Des interventions ciblées pour rénover, rafraîchir ou améliorer votre intérieur sans engager une rénovation complète.",
 "projects_kicker":"NOTRE APPROCHE","projects_title":"Un projet suivi avec soin et précision.",
 "projects_text":"Simetrika s’appuie sur un savoir-faire personnalisé et un réseau de partenaires pour coordonner les différentes étapes de votre rénovation.",
-"why_kicker":"À PROPOS DE SIMETRIKA","why_title":"Un accompagnement humain, du premier échange aux finitions.",
+"why_kicker":"À PROPOS DE SIMETRIKA","why_title":"Un interlocuteur unique, du premier échange aux finitions.",
 "why1":"Expérience internationale","why1d":"Georgel Rotaru, coordinateur de travaux, a développé son expérience en Roumanie, en Espagne et au Luxembourg.",
 "why2":"Projet sur mesure","why2d":"Chaque projet est étudié selon vos besoins, vos envies et les particularités de votre espace.",
 "why3":"Suivi personnalisé","why3d":"La qualité, le soin apporté au projet, la satisfaction du client et le respect des délais sont au cœur de l’accompagnement.",
 "cta_title":"Besoin d’une rénovation sur mesure ?","cta_text":"Contactez Simetrika pour discuter de votre projet et obtenir un devis personnalisé.","cta_button":"Parler de mon projet",
 "contact_kicker":"CONTACT","contact_title":"Parlons de votre projet.","contact_text":"Pour toute demande de renseignements ou de devis, décrivez-nous votre projet en quelques lignes.",
 "name":"Nom","email":"Adresse e-mail","phone":"Téléphone","project":"Votre projet","project_ph":"Type de travaux, ville du chantier, pièces concernées, délais souhaités…","send":"Envoyer ma demande",
-"s1more":"Cuisine, salle de bain, séjour, chambres et escaliers. Selon le projet, Simetrika organise également les interventions nécessaires en électricité, plomberie et plafonds.",
-"s2more":"Travaux de façade, fenêtres et toiture, avec coordination des différents intervenants lorsque le projet nécessite plusieurs corps de métier.",
-"s3more":"Peinture, enduits, carrelage, pose de sols, plancher et stratifié, ainsi que des interventions ciblées pour améliorer ou remettre en état un espace.",
+"s1more":"Selon votre projet, les travaux peuvent inclure la peinture, les enduits, les sols, le carrelage, les plafonds ainsi que les interventions nécessaires en électricité et plomberie. Simetrika assure le suivi des différentes étapes pour vous offrir un projet cohérent, du début aux finitions.",
+"s2more":"Simetrika vous accompagne dans l’organisation et le suivi des travaux extérieurs et coordonne, lorsque nécessaire, les différents corps de métier afin de simplifier la réalisation de votre projet.",
+"s3more":"Peinture, enduits, carrelage, pose de sols, plancher et stratifié : Simetrika réalise et organise les travaux nécessaires pour remettre une pièce en état, améliorer ses finitions ou l’adapter à vos besoins.",
 "more":"Plus d’informations",
-"process_kicker":"COMMENT ÇA MARCHE ?","process_title":"Un parcours simple, du premier contact au chantier.",
-"process_intro":"Un seul interlocuteur pour comprendre votre besoin, préparer une solution adaptée et coordonner les étapes du projet.",
-"p1":"1. Contact","p1d":"Vous nous décrivez votre projet par téléphone, WhatsApp ou via le formulaire.",
-"p2":"2. Discussion & visite","p2d":"Nous échangeons sur vos besoins et, si nécessaire, organisons une visite sur place.",
-"p3":"3. Devis","p3d":"Vous recevez une proposition adaptée au périmètre défini ensemble.",
-"p4":"4. Travaux","p4d":"Simetrika suit le projet et coordonne les partenaires nécessaires jusqu’aux finitions.",
-"about_text":"Avec Simetrika, Georgel Rotaru accompagne les projets de rénovation comme interlocuteur principal. Selon les travaux, Simetrika intervient directement ou coordonne des partenaires spécialisés afin de garder un suivi clair du projet.",
+"process_kicker":"COMMENT ÇA MARCHE ?","process_title":"Votre projet, étape par étape",
+"process_intro":"Un accompagnement clair et structuré, du premier échange jusqu’à la réalisation des travaux.",
+"p1":"1. Premier contact","p1d":"Vous nous présentez votre projet, vos besoins et vos attentes par téléphone, WhatsApp ou via notre formulaire.",
+"p2":"2. Échange & visite","p2d":"Nous discutons ensemble des travaux à réaliser et, si nécessaire, organisons une visite sur place afin d’évaluer votre projet.",
+"p3":"3. Proposition & devis","p3d":"Sur la base des besoins définis ensemble, nous préparons une proposition claire et un devis adapté à votre projet.",
+"p4":"4. Réalisation & suivi","p4d":"Simetrika réalise et suit les travaux jusqu’aux finitions, en coordonnant si nécessaire les différents corps de métier.",
+"about_text":"Derrière Simetrika, il y a <strong>Georgel Rotaru</strong>, coordinateur de travaux avec une expérience acquise en Roumanie, en Espagne et au Luxembourg.<br><br>Georgel accompagne personnellement chaque projet, de la première discussion jusqu’aux finitions. Selon les besoins, Simetrika réalise les travaux et coordonne des partenaires spécialisés afin de garantir un suivi simple et cohérent.<br><br><strong>Une approche directe, des solutions adaptées et un seul interlocuteur tout au long de votre projet.</strong>",
 "footer":"Simetrika · 1 rue Ermesinde · L-1469 Luxembourg"
 }
 
@@ -59,7 +59,7 @@ st.markdown(f"""
 <div class="card"><div class="num">03</div><h3>{L['s3']}</h3><p>{L['s3d']}</p><details><summary class="service-link">{L['more']} ↓</summary><p class="service-detail">{L['s3more']}</p></details></div>
 </div></div>
 <div id="realisations" class="section"><div class="kicker">{L['process_kicker']}</div><h2 class="section-title">{L['process_title']}</h2><p class="section-lead">{L['process_intro']}</p><div class="process-grid"><div class="process-step"><h3>{L['p1']}</h3><p>{L['p1d']}</p></div><div class="process-step"><h3>{L['p2']}</h3><p>{L['p2d']}</p></div><div class="process-step"><h3>{L['p3']}</h3><p>{L['p3d']}</p></div><div class="process-step"><h3>{L['p4']}</h3><p>{L['p4d']}</p></div></div></div>
-<div id="apropos" class="why"><div class="kicker">{L['why_kicker']}</div><h2 class="section-title">{L['why_title']}</h2><p class="about-copy">{L['about_text']}</p><div class="why-grid"><div class="why-item"><h3>{L['why1']}</h3><p>{L['why1d']}</p></div><div class="why-item"><h3>{L['why2']}</h3><p>{L['why2d']}</p></div><div class="why-item"><h3>{L['why3']}</h3><p>{L['why3d']}</p></div></div></div>
+<div id="apropos" class="why"><div class="kicker">{L['why_kicker']}</div><h2 class="section-title">{L['why_title']}</h2><p class="about-copy">{L['about_text']}</p></div>
 <div class="big-cta"><div><h2>{L['cta_title']}</h2><p>{L['cta_text']}</p></div><a href="#contact">{L['cta_button']} →</a></div>
 """,unsafe_allow_html=True)
 
