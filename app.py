@@ -208,7 +208,7 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 # Complete, configurable estimator. Prices above are deliberately provisional.
-st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p><div class="calculator-shell">""", unsafe_allow_html=True)
+st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p>""", unsafe_allow_html=True)
 
 if "calc_rows" not in st.session_state:
     st.session_state.calc_rows = [{"work":"peinture","qty":50.0}]
@@ -253,7 +253,7 @@ if st.session_state.calc_rows:
     st.markdown(f"""<div class="calculator-total"><div class="label">{L['calc_total']}</div><div class="price">{total_txt}</div></div><p class="calculator-disclaimer">{L['calc_disclaimer']}</p><a class="calculator-quote" href="#contact">{L['calc_quote']} →</a>""", unsafe_allow_html=True)
 else:
     st.info(L["calc_empty"])
-st.markdown("</div></div>", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True)
 
 st.markdown(f"""
 <div id="realisations" class="section"><div class="kicker">{L['portfolio_kicker']}</div><h2 class="section-title">{L['portfolio_title']}</h2><p class="section-lead">{L['portfolio_intro']}</p><div class="portfolio-grid">
