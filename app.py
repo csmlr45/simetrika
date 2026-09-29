@@ -20,7 +20,7 @@ L = {
 "why2":"Projet sur mesure","why2d":"Chaque projet est étudié selon vos besoins, vos envies et les particularités de votre espace.",
 "why3":"Suivi personnalisé","why3d":"La qualité, le soin apporté au projet, la satisfaction du client et le respect des délais sont au cœur de l’accompagnement.",
 "cta_title":"Besoin d’une rénovation sur mesure ?","cta_text":"Contactez Simetrika pour discuter de votre projet et obtenir un devis personnalisé.","cta_button":"Parler de mon projet",
-"contact_kicker":"CONTACT","contact_title":"Parlons de votre projet.","contact_text":"Pour toute demande de renseignements ou de devis, décrivez-nous votre projet en quelques lignes.",
+"contact_kicker":"CONTACT","contact_title":"Décrivez-nous votre projet.","contact_text":"Envoyez-nous les informations essentielles sur votre projet. Simetrika vous recontactera pour en discuter avec vous.",
 "name":"Nom","email":"Adresse e-mail","phone":"Téléphone","project":"Votre projet","project_ph":"Type de travaux, ville du chantier, pièces concernées, délais souhaités…","send":"Envoyer ma demande",
 "s1more":"Selon votre projet, les travaux peuvent inclure la peinture, les enduits, les sols, le carrelage, les plafonds ainsi que les interventions nécessaires en électricité et plomberie. Simetrika assure le suivi des différentes étapes pour vous offrir un projet cohérent, du début aux finitions.",
 "s2more":"Simetrika vous accompagne dans l’organisation et le suivi des travaux extérieurs et coordonne, lorsque nécessaire, les différents corps de métier afin de simplifier la réalisation de votre projet.",
@@ -38,7 +38,7 @@ L = {
 "kitchen_meta":"Rénovation intérieure","kitchen_title":"Rénovation de cuisine","kitchen_desc":"Rénovation et aménagement d’une cuisine, avec pose du mobilier, du plan de travail et de la crédence.",
 "pool_meta":"Aménagement extérieur","pool_title":"Aménagement d’une terrasse autour d’une piscine","pool_desc":"Réalisation d’une terrasse autour d’une piscine, avec préparation de la structure et pose du revêtement.",
 "view_project":"Voir le projet","call":"Appeler","email_btn":"E-mail","footer_tagline":"Le savoir-faire personnalisé",
-"response_24h":"Nous vous contacterons par e-mail ou par téléphone dans un délai maximum de 24 heures.","form_success":"Merci ! Votre demande a bien été saisie.","form_warning":"Merci d’indiquer votre nom, un moyen de contact et quelques informations sur votre projet."
+"response_24h":"Décrivez-nous votre projet. Nous vous recontacterons par téléphone ou par e-mail dans un délai maximum de 24 heures.","form_success":"Merci ! Votre demande a bien été saisie.","form_warning":"Merci d’indiquer votre nom, un moyen de contact et quelques informations sur votre projet."
 }
 
 
@@ -63,14 +63,14 @@ DE = {
 "why_kicker":"ÜBER SIMETRIKA","why_title":"Ein Ansprechpartner – vom ersten Gespräch bis zur Fertigstellung.",
 "about_text":"Hinter Simetrika steht <strong>Georgel Rotaru</strong>, Baukoordinator mit Erfahrung aus Rumänien, Spanien und Luxemburg.<br><br>Georgel begleitet jedes Projekt persönlich – vom ersten Gespräch bis zur Fertigstellung. Je nach Bedarf führt Simetrika Arbeiten selbst aus und koordiniert spezialisierte Partner, damit die Umsetzung einfach und stimmig bleibt.<br><br><strong>Direkte Kommunikation, passende Lösungen und ein Ansprechpartner während des gesamten Projekts.</strong>",
 "cta_title":"Sie planen eine individuelle Renovierung?","cta_text":"Kontaktieren Sie Simetrika, um Ihr Projekt zu besprechen und ein individuelles Angebot zu erhalten.","cta_button":"Projekt besprechen",
-"contact_kicker":"KONTAKT","contact_title":"Sprechen wir über Ihr Projekt.","contact_text":"Für Fragen oder ein Angebot beschreiben Sie uns Ihr Vorhaben kurz.",
+"contact_kicker":"KONTAKT","contact_title":"Beschreiben Sie uns Ihr Projekt.","contact_text":"Senden Sie uns die wichtigsten Informationen zu Ihrem Vorhaben. Simetrika meldet sich anschließend bei Ihnen, um alles Weitere zu besprechen.",
 "name":"Name","email":"E-Mail-Adresse","phone":"Telefon","project":"Ihr Projekt","project_ph":"Art der Arbeiten, Ort der Baustelle, betroffene Räume, gewünschter Zeitraum …","send":"Anfrage senden",
 "portfolio_kicker":"REFERENZEN","portfolio_title":"Ausgewählte Projekte.","portfolio_intro":"Drei Projekte, die einen Einblick in die von Simetrika ausgeführten Arbeiten geben.",
 "roof_meta":"Langsur · Dach","roof_title":"Dachrenovierung","roof_desc":"Dachrenovierung in Langsur mit Arbeiten an der Konstruktion und Dacheindeckung.",
 "kitchen_meta":"Innenrenovierung","kitchen_title":"Küchenrenovierung","kitchen_desc":"Renovierung und Ausbau einer Küche mit Montage der Möbel, Arbeitsplatte und Küchenrückwand.",
 "pool_meta":"Außenbereich","pool_title":"Terrasse rund um einen Pool","pool_desc":"Ausführung einer Terrasse rund um einen Pool einschließlich Vorbereitung der Unterkonstruktion und Verlegung des Belags.",
 "view_project":"Projekt ansehen","call":"Anrufen","email_btn":"E-Mail","footer_tagline":"Individuelles Handwerk",
-"response_24h":"Wir kontaktieren Sie innerhalb von maximal 24 Stunden per E-Mail oder telefonisch.","form_success":"Vielen Dank! Ihre Anfrage wurde erfasst.","form_warning":"Bitte geben Sie Ihren Namen, eine Kontaktmöglichkeit und einige Informationen zu Ihrem Projekt an."
+"response_24h":"Beschreiben Sie uns Ihr Projekt. Wir melden uns innerhalb von maximal 24 Stunden telefonisch oder per E-Mail bei Ihnen.","form_success":"Vielen Dank! Ihre Anfrage wurde erfasst.","form_warning":"Bitte geben Sie Ihren Namen, eine Kontaktmöglichkeit und einige Informationen zu Ihrem Projekt an."
 }
 
 EN = {
@@ -94,14 +94,14 @@ EN = {
 "why_kicker":"ABOUT SIMETRIKA","why_title":"One point of contact, from the first conversation to the finishing touches.",
 "about_text":"Behind Simetrika is <strong>Georgel Rotaru</strong>, a works coordinator with experience gained in Romania, Spain and Luxembourg.<br><br>Georgel personally follows each project from the first discussion through to completion. Depending on the needs, Simetrika carries out the work and coordinates specialist partners to keep the process simple and consistent.<br><br><strong>A direct approach, tailored solutions and one point of contact throughout your project.</strong>",
 "cta_title":"Planning a tailored renovation?","cta_text":"Contact Simetrika to discuss your project and receive a personalised quote.","cta_button":"Discuss my project",
-"contact_kicker":"CONTACT","contact_title":"Let’s talk about your project.","contact_text":"For information or a quote, tell us briefly about your project.",
+"contact_kicker":"CONTACT","contact_title":"Tell us about your project.","contact_text":"Send us the key details of your project. Simetrika will get back to you to discuss the next steps.",
 "name":"Name","email":"Email address","phone":"Phone","project":"Your project","project_ph":"Type of work, project location, rooms involved, preferred timing…","send":"Send my request",
 "portfolio_kicker":"OUR PROJECTS","portfolio_title":"Selected projects.","portfolio_intro":"Three projects illustrating the range of work carried out by Simetrika.",
 "roof_meta":"Langsur · Roofing","roof_title":"Roof renovation","roof_desc":"Roof renovation work carried out in Langsur, including work on the structure and roof covering.",
 "kitchen_meta":"Interior renovation","kitchen_title":"Kitchen renovation","kitchen_desc":"Kitchen renovation and fit-out, including installation of cabinetry, worktop and backsplash.",
 "pool_meta":"Exterior works","pool_title":"Poolside terrace","pool_desc":"Construction of a terrace around a swimming pool, including preparation of the supporting structure and installation of the decking.",
 "view_project":"View project","call":"Call","email_btn":"Email","footer_tagline":"Personalised craftsmanship",
-"response_24h":"We will contact you by email or phone within a maximum of 24 hours.","form_success":"Thank you! Your request has been recorded.","form_warning":"Please enter your name, a way to contact you and a few details about your project."
+"response_24h":"Tell us about your project. We will get back to you by phone or email within a maximum of 24 hours.","form_success":"Thank you! Your request has been recorded.","form_warning":"Please enter your name, a way to contact you and a few details about your project."
 }
 
 # PROVISIONAL TEST PRICES — replace with Georgel's confirmed tariffs later.
@@ -303,7 +303,7 @@ if(!window.parent.__simetrikaEscBound){
 st.markdown('<div id="contact"></div>', unsafe_allow_html=True)
 left,right=st.columns([.8,1.2],gap="large", vertical_alignment="top")
 with left:
- st.markdown(f"""<div class="contact-left"><div class="kicker">{L['contact_kicker']}</div><h2 class="section-title">{L['contact_title']}</h2><p class="section-lead">{L['contact_text']}</p><p class="contact-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde<br>L-1469 Luxembourg<br><br><a href="tel:+352691115110"><strong>+352 691 115 110</strong></a><br><a href="mailto:contact@simetrika.lu"><strong>contact@simetrika.lu</strong></a></p><div class="contact-actions"><a class="dark" href="#contact">{L['quote']}</a><a class="outline" href="tel:+352691115110">{L['call']}</a><a class="whatsapp" href="https://wa.me/352691115110" target="_blank" rel="noopener">WhatsApp</a><a class="outline" href="mailto:contact@simetrika.lu">{L['email_btn']}</a></div></div>""",unsafe_allow_html=True)
+ st.markdown(f"""<div class="contact-left"><div class="kicker">{L['contact_kicker']}</div><h2 class="section-title">{L['contact_title']}</h2><p class="section-lead">{L['contact_text']}</p><p class="contact-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde<br>L-1469 Luxembourg<br><br><strong>+352 691 115 110</strong><br><a href="mailto:contact@simetrika.lu"><strong>contact@simetrika.lu</strong></a></p><div class="contact-actions"><a class="dark" href="#contact">{L['quote']}</a><a class="whatsapp" href="https://wa.me/352691115110" target="_blank" rel="noopener">WhatsApp</a><a class="outline" href="mailto:contact@simetrika.lu">{L['email_btn']}</a></div></div>""",unsafe_allow_html=True)
 with right:
  st.markdown(f"""<div style="height:2.15rem"></div><div class="contact-response"><strong>✓</strong> {L['response_24h']}</div>""", unsafe_allow_html=True)
  with st.form("contact_form",clear_on_submit=True):
@@ -311,4 +311,4 @@ with right:
   if st.form_submit_button(L["send"]+" →"):
    if name and (email or phone) and project: st.success(L["form_success"])
    else: st.warning(L["form_warning"])
-st.markdown(f"""<div class="site-footer"><div class="footer-brand"><div class="footer-brand-text">SIMETRIKA<span>.</span></div><span>{L['footer_tagline']}</span></div><div class="footer-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde · L-1469 Luxembourg<br><a href="tel:+352691115110">+352 691 115 110</a> · <a href="mailto:contact@simetrika.lu">contact@simetrika.lu</a><br>© 2026</div></div>""",unsafe_allow_html=True)
+st.markdown(f"""<div class="site-footer"><div class="footer-brand"><div class="footer-brand-text">SIMETRIKA<span>.</span></div><span>{L['footer_tagline']}</span></div><div class="footer-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde · L-1469 Luxembourg<br>+352 691 115 110 · <a href="mailto:contact@simetrika.lu">contact@simetrika.lu</a><br>© 2026</div></div>""",unsafe_allow_html=True)
