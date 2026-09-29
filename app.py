@@ -104,6 +104,74 @@ EN = {
 "form_success":"Thank you! Your request has been recorded.","form_warning":"Please enter your name, a way to contact you and a few details about your project."
 }
 
+# PROVISIONAL TEST PRICES — replace with Georgel's confirmed tariffs later.
+PRICE_CONFIG = {
+    "peinture": {"unit": "m²", "min": 18, "max": 30},
+    "enduit": {"unit": "m²", "min": 20, "max": 35},
+    "stratifie": {"unit": "m²", "min": 25, "max": 45},
+    "parquet": {"unit": "m²", "min": 45, "max": 75},
+    "vinyle": {"unit": "m²", "min": 30, "max": 50},
+    "carrelage_sol": {"unit": "m²", "min": 45, "max": 75},
+    "carrelage_mur": {"unit": "m²", "min": 50, "max": 85},
+    "terrasse": {"unit": "m²", "min": 70, "max": 120},
+    "facade": {"unit": "m²", "min": 40, "max": 75},
+    "demolition": {"unit": "m²", "min": 15, "max": 30},
+    "prise": {"unit": "pc", "min": 55, "max": 90},
+    "luminaire": {"unit": "pc", "min": 45, "max": 80},
+    "lavabo": {"unit": "pc", "min": 180, "max": 320},
+    "wc": {"unit": "pc", "min": 220, "max": 380},
+    "robinetterie": {"unit": "pc", "min": 100, "max": 220},
+    "cuisine": {"unit": "ml", "min": 180, "max": 320},
+}
+
+CALC_FR = {
+"calc_kicker":"ESTIMATEUR DE PRIX","calc_title":"Estimez votre projet en quelques clics.",
+"calc_intro":"Sélectionnez les travaux et indiquez les quantités. Vous obtenez immédiatement une fourchette indicative pour votre projet.",
+"calc_provisional":"Tarifs de démonstration provisoires — ils seront remplacés par les tarifs confirmés de Simetrika.",
+"calc_add":"Ajouter des travaux","calc_empty":"Ajoutez une ou plusieurs prestations pour obtenir une estimation.",
+"calc_work":"Prestation","calc_qty":"Quantité","calc_unit":"Unité","calc_range":"Estimation","calc_remove":"Supprimer",
+"calc_total":"Estimation indicative du projet","calc_disclaimer":"Cette estimation est indicative et ne constitue pas une offre. Le prix final dépend notamment de l’état du support, des matériaux choisis, de l’accessibilité et des conditions du chantier. Une offre définitive est établie après évaluation du projet.",
+"calc_quote":"Demander un devis précis","calc_select":"Choisir une prestation",
+"calc_cat_walls":"Murs & peinture","calc_cat_floors":"Sols","calc_cat_tiles":"Carrelage","calc_cat_ext":"Extérieur","calc_cat_demo":"Dépose & démolition","calc_cat_elec":"Électricité","calc_cat_plumb":"Plomberie","calc_cat_kitchen":"Cuisine",
+"work_peinture":"Peinture","work_enduit":"Enduit","work_stratifie":"Sol stratifié","work_parquet":"Parquet","work_vinyle":"Sol vinyle","work_carrelage_sol":"Carrelage au sol","work_carrelage_mur":"Carrelage mural","work_terrasse":"Terrasse","work_facade":"Façade","work_demolition":"Dépose / démolition","work_prise":"Prise électrique","work_luminaire":"Pose de luminaire","work_lavabo":"Pose de lavabo","work_wc":"Pose de WC","work_robinetterie":"Robinetterie","work_cuisine":"Montage / aménagement cuisine",
+"unit_pc":"pièce","unit_ml":"mètre linéaire","unit_m2":"m²"
+}
+CALC_DE = {
+"calc_kicker":"PREISRECHNER","calc_title":"Schätzen Sie Ihr Projekt mit wenigen Klicks.",
+"calc_intro":"Wählen Sie die gewünschten Arbeiten und Mengen. Sie erhalten sofort eine unverbindliche Preisspanne.",
+"calc_provisional":"Vorläufige Testpreise — sie werden später durch die bestätigten Simetrika-Preise ersetzt.",
+"calc_add":"Arbeiten hinzufügen","calc_empty":"Fügen Sie eine oder mehrere Leistungen hinzu, um eine Schätzung zu erhalten.",
+"calc_work":"Leistung","calc_qty":"Menge","calc_unit":"Einheit","calc_range":"Schätzung","calc_remove":"Entfernen",
+"calc_total":"Unverbindliche Projektschätzung","calc_disclaimer":"Diese Schätzung ist unverbindlich und stellt kein Angebot dar. Der endgültige Preis hängt unter anderem vom Zustand des Untergrunds, den gewählten Materialien, der Zugänglichkeit und den Bedingungen auf der Baustelle ab. Ein verbindliches Angebot wird nach Prüfung des Projekts erstellt.",
+"calc_quote":"Genaues Angebot anfragen","calc_select":"Leistung auswählen",
+"calc_cat_walls":"Wände & Malerarbeiten","calc_cat_floors":"Böden","calc_cat_tiles":"Fliesen","calc_cat_ext":"Außenbereich","calc_cat_demo":"Rückbau & Abbruch","calc_cat_elec":"Elektro","calc_cat_plumb":"Sanitär","calc_cat_kitchen":"Küche",
+"work_peinture":"Malerarbeiten","work_enduit":"Spachtel- / Putzarbeiten","work_stratifie":"Laminat","work_parquet":"Parkett","work_vinyle":"Vinylboden","work_carrelage_sol":"Bodenfliesen","work_carrelage_mur":"Wandfliesen","work_terrasse":"Terrasse","work_facade":"Fassade","work_demolition":"Rückbau / Abbruch","work_prise":"Steckdose","work_luminaire":"Leuchtenmontage","work_lavabo":"Waschbeckenmontage","work_wc":"WC-Montage","work_robinetterie":"Armaturen","work_cuisine":"Küchenmontage / Ausbau",
+"unit_pc":"Stück","unit_ml":"lfm","unit_m2":"m²"
+}
+CALC_EN = {
+"calc_kicker":"PRICE ESTIMATOR","calc_title":"Estimate your project in a few clicks.",
+"calc_intro":"Select the work you need and enter the quantities to receive an instant indicative price range.",
+"calc_provisional":"Provisional demonstration prices — these will later be replaced with Simetrika's confirmed rates.",
+"calc_add":"Add work","calc_empty":"Add one or more services to receive an estimate.",
+"calc_work":"Service","calc_qty":"Quantity","calc_unit":"Unit","calc_range":"Estimate","calc_remove":"Remove",
+"calc_total":"Indicative project estimate","calc_disclaimer":"This estimate is indicative and does not constitute a quotation. The final price depends on factors including the condition of the existing surfaces, materials selected, accessibility and site conditions. A final quotation is provided after the project has been assessed.",
+"calc_quote":"Request a precise quote","calc_select":"Choose a service",
+"calc_cat_walls":"Walls & painting","calc_cat_floors":"Flooring","calc_cat_tiles":"Tiling","calc_cat_ext":"Exterior","calc_cat_demo":"Removal & demolition","calc_cat_elec":"Electrical","calc_cat_plumb":"Plumbing","calc_cat_kitchen":"Kitchen",
+"work_peinture":"Painting","work_enduit":"Plastering / skim coat","work_stratifie":"Laminate flooring","work_parquet":"Parquet flooring","work_vinyle":"Vinyl flooring","work_carrelage_sol":"Floor tiling","work_carrelage_mur":"Wall tiling","work_terrasse":"Terrace","work_facade":"Façade","work_demolition":"Removal / demolition","work_prise":"Electrical socket","work_luminaire":"Light fitting installation","work_lavabo":"Washbasin installation","work_wc":"Toilet installation","work_robinetterie":"Tap / fixture installation","work_cuisine":"Kitchen fitting / installation",
+"unit_pc":"piece","unit_ml":"linear metre","unit_m2":"m²"
+}
+
+WORK_GROUPS = [
+("calc_cat_walls", ["peinture","enduit"]),
+("calc_cat_floors", ["stratifie","parquet","vinyle"]),
+("calc_cat_tiles", ["carrelage_sol","carrelage_mur"]),
+("calc_cat_ext", ["terrasse","facade"]),
+("calc_cat_demo", ["demolition"]),
+("calc_cat_elec", ["prise","luminaire"]),
+("calc_cat_plumb", ["lavabo","wc","robinetterie"]),
+("calc_cat_kitchen", ["cuisine"]),
+]
+
 lang = st.query_params.get("lang", "fr")
 if lang not in ("fr", "de", "en"):
     lang = "fr"
@@ -111,6 +179,8 @@ if lang == "de":
     L.update(DE)
 elif lang == "en":
     L.update(EN)
+
+L.update(CALC_DE if lang == "de" else CALC_EN if lang == "en" else CALC_FR)
 
 st.markdown("""
 <style>
@@ -121,8 +191,8 @@ html{scroll-behavior:smooth}.stApp{background:var(--paper);color:var(--ink);font
 .hero{min-height:570px;border-radius:30px;padding:5.2rem 4.5rem;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(90deg,rgba(20,30,24,.88),rgba(20,30,24,.68) 48%,rgba(20,30,24,.12)),url('https://primary.jwwb.nl/unsplash/fp2b945RQUg.jpg?enable=upscale&enable-io=true&width=1600');background-size:cover;background-position:center;box-shadow:0 22px 60px rgba(32,38,33,.10)}.eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.18em;color:#d9dfd7;margin-bottom:1.2rem}.hero h1{color:#fff!important;font-size:clamp(2.8rem,6vw,5.3rem);max-width:800px;line-height:.98;margin:0 0 1.5rem;overflow-wrap:normal;word-break:normal}.hero.hero-de h1{font-size:clamp(2.7rem,5.25vw,4.65rem);max-width:900px;letter-spacing:-.045em}.hero p{color:#edf0ec;font-size:1.15rem;max-width:630px}.hero-actions{margin-top:1.4rem;display:flex;gap:.8rem;flex-wrap:wrap}.btn{display:inline-block;text-decoration:none;border-radius:999px;padding:.9rem 1.25rem;font-weight:700;font-size:.92rem}.btn-primary{background:#fff;color:var(--ink)}.hero .btn-secondary{border:1.5px solid rgba(255,255,255,.9);color:#fff!important;background:rgba(17,25,20,.58);backdrop-filter:blur(4px);text-shadow:0 1px 2px rgba(0,0,0,.35)}.hero .btn-secondary:hover{background:rgba(17,25,20,.82);border-color:#fff}
 .trustbar{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.5rem 0 4.5rem}.trust{text-align:center;font-weight:600;color:var(--ink);font-size:.92rem}.trust span{color:var(--sage);margin-right:.4rem}.section{padding:4.5rem 0}.kicker{color:var(--sage-dark);font-size:.76rem;letter-spacing:.18em;font-weight:800;margin-bottom:.7rem}.section-title{font-size:clamp(2rem,4vw,3.4rem);line-height:1.08;max-width:760px;margin:.2rem 0 1rem}.section-lead{max-width:680px;font-size:1.05rem;margin-bottom:2rem}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:2rem;min-height:300px;display:flex;flex-direction:column}.card .num{flex:0 0 auto}.card h3{min-height:3.4rem}.card>p{min-height:7.2rem}.card>details{margin-top:auto}.num{color:var(--sage);font-weight:800;font-size:.82rem}.card h3{font-size:1.35rem;margin:2.4rem 0 .7rem}.card p{font-size:.95rem;margin:0}.service-link{display:inline-block;margin-top:1.2rem;color:var(--sage-dark);font-weight:800;text-decoration:none}.service-detail{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.9rem!important}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}.process-step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem}.process-step h3{font-size:1.05rem;margin:.2rem 0 .7rem}.process-step p{font-size:.9rem;margin:0}.contact-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}.contact-actions a{padding:.78rem 1rem;border-radius:999px;text-decoration:none;font-weight:800;font-size:.88rem}.contact-actions .dark{background:var(--ink);color:#fff}.contact-actions .outline{border:1px solid var(--ink);color:var(--ink)}.about-copy{max-width:780px;font-size:1.02rem;margin:0 0 2rem}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}.portfolio-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}.portfolio-card img{width:100%;height:300px;object-fit:cover;display:block}.portfolio-copy{padding:1.5rem;display:flex;flex-direction:column;flex:1}.portfolio-meta{font-size:.75rem;letter-spacing:.12em;color:var(--sage-dark);font-weight:800;text-transform:uppercase}.portfolio-copy h3{font-size:1.3rem;margin:.55rem 0 .65rem;min-height:4.8rem}.portfolio-copy>p{font-size:.92rem;margin:0;min-height:5.4rem}.portfolio-more{margin-top:auto;padding-top:1rem}.portfolio-more summary{cursor:pointer;color:var(--sage-dark);font-weight:800}.portfolio-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin-top:.9rem}.portfolio-gallery img{height:105px;border-radius:10px}.zoomable{display:block;cursor:zoom-in}.zoomable>img{transition:transform .18s ease,filter .18s ease}.zoomable:hover>img{transform:scale(1.015);filter:brightness(.94)}.lightbox{display:none;position:fixed;inset:0;z-index:99999;background:rgba(10,14,11,.92);padding:2rem;align-items:center;justify-content:center}.lightbox:target{display:flex}.lightbox-backdrop{position:absolute;inset:0;z-index:1}.lightbox img{position:relative;z-index:2;max-width:min(94vw,1400px);max-height:90vh;width:auto;height:auto;object-fit:contain;border-radius:12px;box-shadow:0 24px 70px rgba(0,0,0,.45)}.lightbox-close{position:fixed;z-index:100001;top:1.2rem;right:1.5rem;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);text-decoration:none;font:700 1.6rem/1 'DM Sans';box-shadow:0 6px 24px rgba(0,0,0,.25)}
-.why{background:#e8ebe5;border-radius:30px;padding:3.4rem;margin:3rem 0}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.2rem}.why-item{border-top:1px solid #bfc7bd;padding-top:1.2rem}.why-item h3{font-size:1.15rem;margin:.4rem 0}.big-cta{background:var(--ink);border-radius:30px;padding:4rem;margin:4rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem}.big-cta h2{color:#fff!important;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 .6rem}.big-cta p{color:#cbd1cc;max-width:650px;margin:0}.big-cta a{white-space:nowrap;background:#fff;color:var(--ink);text-decoration:none;padding:1rem 1.3rem;border-radius:999px;font-weight:800}.contact-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:2rem}.stTextInput input,.stTextArea textarea{border-radius:12px!important;background:#fbfbf8!important}.stFormSubmitButton button{border-radius:999px!important;background:var(--ink)!important;color:#fff!important;border:0!important;font-weight:700!important}.site-footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;color:var(--muted);font-size:.85rem}.footer-brand img{width:185px;height:auto;display:block;margin-bottom:.7rem}.footer-details{text-align:right;line-height:1.8}.footer-details a{color:var(--muted);text-decoration:none}.contact-details{line-height:1.9}.contact-details a{color:var(--ink);text-decoration:none}.contact-actions .whatsapp{background:#526553;color:#fff;border:1px solid #526553}
-@media(max-width:800px){.site-footer{flex-direction:column}.footer-details{text-align:left}.card{min-height:0}.card h3,.card>p,.portfolio-copy h3,.portfolio-copy>p{min-height:0}.card>details,.portfolio-more{margin-top:1rem}.nav>a:not(.pill){display:none}.lang-switch a{display:inline-block!important}.hero{padding:3rem 1.6rem;min-height:520px}.cards,.trustbar,.why-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}.portfolio-card img{height:280px}.big-cta{padding:2.3rem 1.6rem;flex-direction:column;align-items:flex-start}.why{padding:2.2rem 1.4rem}.project-main,.project-small{min-height:320px}}
+.calculator-shell{background:#eef0eb;border:1px solid var(--line);border-radius:30px;padding:2.4rem;margin-top:2rem}.calculator-note{background:#fff7df;border:1px solid #ead8a4;border-radius:14px;padding:.85rem 1rem;color:#675b3a;font-size:.86rem;margin-bottom:1.4rem}.calculator-total{background:var(--ink);border-radius:22px;padding:1.7rem 2rem;margin-top:1.4rem;color:#fff}.calculator-total .label{color:#cbd1cc;font-size:.88rem}.calculator-total .price{font:800 clamp(2rem,4vw,3.2rem) 'Manrope';letter-spacing:-.04em;margin:.25rem 0;color:#fff}.calculator-disclaimer{font-size:.82rem;color:#68716b;margin-top:1rem}.calculator-quote{display:inline-block;margin-top:1rem;background:#fff;color:var(--ink);text-decoration:none;padding:.8rem 1rem;border-radius:999px;font-weight:800}.calc-row{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1rem;margin:.7rem 0}.calc-row-title{font-weight:800;color:var(--ink);margin-bottom:.2rem}.calc-row-meta{font-size:.86rem;color:var(--muted)}.calc-price{font-weight:800;color:var(--sage-dark)}.why{background:#e8ebe5;border-radius:30px;padding:3.4rem;margin:3rem 0}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.2rem}.why-item{border-top:1px solid #bfc7bd;padding-top:1.2rem}.why-item h3{font-size:1.15rem;margin:.4rem 0}.big-cta{background:var(--ink);border-radius:30px;padding:4rem;margin:4rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem}.big-cta h2{color:#fff!important;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 .6rem}.big-cta p{color:#cbd1cc;max-width:650px;margin:0}.big-cta a{white-space:nowrap;background:#fff;color:var(--ink);text-decoration:none;padding:1rem 1.3rem;border-radius:999px;font-weight:800}.contact-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:2rem}.stTextInput input,.stTextArea textarea{border-radius:12px!important;background:#fbfbf8!important}.stFormSubmitButton button{border-radius:999px!important;background:var(--ink)!important;color:#fff!important;border:0!important;font-weight:700!important}.site-footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;color:var(--muted);font-size:.85rem}.footer-brand img{width:185px;height:auto;display:block;margin-bottom:.7rem}.footer-details{text-align:right;line-height:1.8}.footer-details a{color:var(--muted);text-decoration:none}.contact-details{line-height:1.9}.contact-details a{color:var(--ink);text-decoration:none}.contact-actions .whatsapp{background:#526553;color:#fff;border:1px solid #526553}
+@media(max-width:800px){.site-footer{flex-direction:column}.footer-details{text-align:left}.card{min-height:0}.card h3,.card>p,.portfolio-copy h3,.portfolio-copy>p{min-height:0}.card>details,.portfolio-more{margin-top:1rem}.nav>a:not(.pill){display:none}.lang-switch a{display:inline-block!important}.hero{padding:3rem 1.6rem;min-height:520px}.cards,.trustbar,.why-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}.portfolio-card img{height:280px}.big-cta{padding:2.3rem 1.6rem;flex-direction:column;align-items:flex-start}.why{padding:2.2rem 1.4rem}.calculator-shell{padding:1.3rem}.project-main,.project-small{min-height:320px}}
 </style>
 """,unsafe_allow_html=True)
 
@@ -135,6 +205,57 @@ st.markdown(f"""
 <div class="card"><div class="num">02</div><h3>{L['s2']}</h3><p>{L['s2d']}</p><details><summary class="service-link">{L['more']} ↓</summary><p class="service-detail">{L['s2more']}</p></details></div>
 <div class="card"><div class="num">03</div><h3>{L['s3']}</h3><p>{L['s3d']}</p><details><summary class="service-link">{L['more']} ↓</summary><p class="service-detail">{L['s3more']}</p></details></div>
 </div></div>
+""",unsafe_allow_html=True)
+
+# Complete, configurable estimator. Prices above are deliberately provisional.
+st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p><div class="calculator-shell"><div class="calculator-note">⚠ {L['calc_provisional']}</div>""", unsafe_allow_html=True)
+
+if "calc_rows" not in st.session_state:
+    st.session_state.calc_rows = [{"work":"peinture","qty":50.0}]
+
+# Localized flat option labels; category remains visible in the label.
+option_labels = {}
+for group_key, work_ids in WORK_GROUPS:
+    for wid in work_ids:
+        option_labels[wid] = f"{L[group_key]} · {L['work_'+wid]}"
+
+for idx, row in enumerate(list(st.session_state.calc_rows)):
+    cols = st.columns([2.4, 1, .75, 1.15, .45], gap="small")
+    work_ids = list(PRICE_CONFIG.keys())
+    current_index = work_ids.index(row["work"]) if row["work"] in work_ids else 0
+    with cols[0]:
+        selected = st.selectbox(L["calc_work"], work_ids, index=current_index, format_func=lambda x: option_labels[x], key=f"calc_work_{idx}", label_visibility="collapsed")
+    cfg = PRICE_CONFIG[selected]
+    with cols[1]:
+        qty = st.number_input(L["calc_qty"], min_value=0.0, max_value=10000.0, value=float(row.get("qty",1.0)), step=1.0, key=f"calc_qty_{idx}", label_visibility="collapsed")
+    unit_label = L["unit_m2"] if cfg["unit"]=="m²" else L["unit_ml"] if cfg["unit"]=="ml" else L["unit_pc"]
+    with cols[2]:
+        st.markdown(f"<div style='padding-top:.65rem;color:#68716b'>{unit_label}</div>", unsafe_allow_html=True)
+    low, high = qty*cfg["min"], qty*cfg["max"]
+    with cols[3]:
+        st.markdown(f"<div style='padding-top:.55rem' class='calc-price'>{low:,.0f}–{high:,.0f} €</div>".replace(",", " "), unsafe_allow_html=True)
+    with cols[4]:
+        if st.button("×", key=f"calc_remove_{idx}", help=L["calc_remove"]):
+            st.session_state.calc_rows.pop(idx)
+            st.rerun()
+    st.session_state.calc_rows[idx] = {"work":selected,"qty":qty}
+
+add_col, reset_col = st.columns([1,4])
+with add_col:
+    if st.button("+ "+L["calc_add"], key="calc_add"):
+        st.session_state.calc_rows.append({"work":"peinture","qty":10.0})
+        st.rerun()
+
+total_low = sum(r["qty"]*PRICE_CONFIG[r["work"]]["min"] for r in st.session_state.calc_rows)
+total_high = sum(r["qty"]*PRICE_CONFIG[r["work"]]["max"] for r in st.session_state.calc_rows)
+if st.session_state.calc_rows:
+    total_txt = f"{total_low:,.0f} – {total_high:,.0f} €".replace(",", " ")
+    st.markdown(f"""<div class="calculator-total"><div class="label">{L['calc_total']}</div><div class="price">{total_txt}</div></div><p class="calculator-disclaimer">{L['calc_disclaimer']}</p><a class="calculator-quote" href="#contact">{L['calc_quote']} →</a>""", unsafe_allow_html=True)
+else:
+    st.info(L["calc_empty"])
+st.markdown("</div></div>", unsafe_allow_html=True)
+
+st.markdown(f"""
 <div id="realisations" class="section"><div class="kicker">{L['portfolio_kicker']}</div><h2 class="section-title">{L['portfolio_title']}</h2><p class="section-lead">{L['portfolio_intro']}</p><div class="portfolio-grid">
 <div class="portfolio-card"><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-08.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-08.webp" alt="Rénovation de toiture à Langsur"></a><div class="portfolio-copy"><div class="portfolio-meta">{L['roof_meta']}</div><h3>{L['roof_title']}</h3><p>{L['roof_desc']}</p><details class="portfolio-more"><summary>{L['view_project']} ↓</summary><div class="portfolio-gallery"><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-01.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-01.webp"></a><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-06.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-06.webp"></a><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-07.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/toiture-langsur-07.webp"></a></div></details></div></div>
 <div class="portfolio-card"><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-04.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-04.webp" alt="Rénovation de cuisine"></a><div class="portfolio-copy"><div class="portfolio-meta">{L['kitchen_meta']}</div><h3>{L['kitchen_title']}</h3><p>{L['kitchen_desc']}</p><details class="portfolio-more"><summary>{L['view_project']} ↓</summary><div class="portfolio-gallery"><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-02.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-02.webp"></a><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-03.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-03.webp"></a><a class="zoomable" href="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-05.webp" target="_blank" aria-label="Agrandir l’image"><img src="https://raw.githubusercontent.com/csmlr45/simetrika/main/assets/cuisine-05.webp"></a></div></details></div></div>
