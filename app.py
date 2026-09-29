@@ -208,7 +208,7 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 # Complete, configurable estimator. Prices above are deliberately provisional.
-st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p><div class="calculator-shell"><div class="calculator-note">⚠ {L['calc_provisional']}</div>""", unsafe_allow_html=True)
+st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p><div class="calculator-shell">""", unsafe_allow_html=True)
 
 if "calc_rows" not in st.session_state:
     st.session_state.calc_rows = [{"work":"peinture","qty":50.0}]
