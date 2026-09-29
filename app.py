@@ -129,7 +129,7 @@ CALC_FR = {
 "calc_intro":"Sélectionnez les travaux et indiquez les quantités. Vous obtenez immédiatement une fourchette indicative pour votre projet.",
 "calc_provisional":"Tarifs de démonstration provisoires — ils seront remplacés par les tarifs confirmés de Simetrika.",
 "calc_add":"Ajouter des travaux","calc_empty":"Ajoutez une ou plusieurs prestations pour obtenir une estimation.",
-"calc_work":"Prestation","calc_qty":"Quantité","calc_unit":"Unité","calc_range":"Estimation","calc_remove":"Supprimer",
+"calc_work":"Prestation","calc_qty":"Quantité","calc_unit":"Unité","calc_range":"Estimation","calc_rate":"Tarif indicatif","calc_line_total":"Sous-total","calc_remove":"Supprimer",
 "calc_total":"Estimation indicative du projet","calc_disclaimer":"Cette estimation est indicative et ne constitue pas une offre. Le prix final dépend notamment de l’état du support, des matériaux choisis, de l’accessibilité et des conditions du chantier. Une offre définitive est établie après évaluation du projet.",
 "calc_quote":"Demander un devis précis","calc_select":"Choisir une prestation",
 "calc_cat_walls":"Murs & peinture","calc_cat_floors":"Sols","calc_cat_tiles":"Carrelage","calc_cat_ext":"Extérieur","calc_cat_demo":"Dépose & démolition","calc_cat_elec":"Électricité","calc_cat_plumb":"Plomberie","calc_cat_kitchen":"Cuisine",
@@ -141,7 +141,7 @@ CALC_DE = {
 "calc_intro":"Wählen Sie die gewünschten Arbeiten und Mengen. Sie erhalten sofort eine unverbindliche Preisspanne.",
 "calc_provisional":"Vorläufige Testpreise — sie werden später durch die bestätigten Simetrika-Preise ersetzt.",
 "calc_add":"Arbeiten hinzufügen","calc_empty":"Fügen Sie eine oder mehrere Leistungen hinzu, um eine Schätzung zu erhalten.",
-"calc_work":"Leistung","calc_qty":"Menge","calc_unit":"Einheit","calc_range":"Schätzung","calc_remove":"Entfernen",
+"calc_work":"Leistung","calc_qty":"Menge","calc_unit":"Einheit","calc_range":"Schätzung","calc_rate":"Richtpreis","calc_line_total":"Zwischensumme","calc_remove":"Entfernen",
 "calc_total":"Unverbindliche Projektschätzung","calc_disclaimer":"Diese Schätzung ist unverbindlich und stellt kein Angebot dar. Der endgültige Preis hängt unter anderem vom Zustand des Untergrunds, den gewählten Materialien, der Zugänglichkeit und den Bedingungen auf der Baustelle ab. Ein verbindliches Angebot wird nach Prüfung des Projekts erstellt.",
 "calc_quote":"Genaues Angebot anfragen","calc_select":"Leistung auswählen",
 "calc_cat_walls":"Wände & Malerarbeiten","calc_cat_floors":"Böden","calc_cat_tiles":"Fliesen","calc_cat_ext":"Außenbereich","calc_cat_demo":"Rückbau & Abbruch","calc_cat_elec":"Elektro","calc_cat_plumb":"Sanitär","calc_cat_kitchen":"Küche",
@@ -153,7 +153,7 @@ CALC_EN = {
 "calc_intro":"Select the work you need and enter the quantities to receive an instant indicative price range.",
 "calc_provisional":"Provisional demonstration prices — these will later be replaced with Simetrika's confirmed rates.",
 "calc_add":"Add work","calc_empty":"Add one or more services to receive an estimate.",
-"calc_work":"Service","calc_qty":"Quantity","calc_unit":"Unit","calc_range":"Estimate","calc_remove":"Remove",
+"calc_work":"Service","calc_qty":"Quantity","calc_unit":"Unit","calc_range":"Estimate","calc_rate":"Indicative rate","calc_line_total":"Subtotal","calc_remove":"Remove",
 "calc_total":"Indicative project estimate","calc_disclaimer":"This estimate is indicative and does not constitute a quotation. The final price depends on factors including the condition of the existing surfaces, materials selected, accessibility and site conditions. A final quotation is provided after the project has been assessed.",
 "calc_quote":"Request a precise quote","calc_select":"Choose a service",
 "calc_cat_walls":"Walls & painting","calc_cat_floors":"Flooring","calc_cat_tiles":"Tiling","calc_cat_ext":"Exterior","calc_cat_demo":"Removal & demolition","calc_cat_elec":"Electrical","calc_cat_plumb":"Plumbing","calc_cat_kitchen":"Kitchen",
@@ -196,14 +196,14 @@ html{scroll-behavior:smooth}.stApp{background:var(--paper);color:var(--ink);font
 #calculateur + div [data-testid="stHorizontalBlock"]{background:#f0f2ed;border:1px solid #dde2da;border-radius:20px;padding:.7rem .8rem;margin:.55rem 0}
 #calculateur + div [data-testid="stSelectbox"]>div>div,#calculateur + div [data-testid="stNumberInput"] input{background:#fff!important}
 #calculateur + div button{border-radius:12px}
-.calculator-total{position:relative;overflow:hidden;background:#e8ede6;border:1px solid #d4ddd2;border-radius:24px;padding:1.8rem 2rem;margin-top:1.7rem;color:var(--ink)}
-.calculator-total:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-65px;top:-85px;background:rgba(120,139,120,.13)}
-.calculator-total .label{color:#5d695f;font-size:.82rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase}
-.calculator-total .price{font:750 clamp(2.15rem,4vw,3.35rem) 'Manrope';letter-spacing:-.045em;margin:.3rem 0;color:var(--ink)}
+.calculator-total{background:#f0f2ed;border:1px solid #d9ded7;border-radius:22px;padding:1.65rem 1.9rem;margin-top:1.5rem;color:var(--ink)}
+
+.calculator-total .label{color:#68716b;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.calculator-total .price{font:700 clamp(2rem,3.7vw,3rem) 'Manrope';letter-spacing:-.04em;margin:.3rem 0;color:var(--ink)}
 .calculator-disclaimer{font-size:.82rem;line-height:1.65;color:#68716b;margin:.8rem 0 0;max-width:900px}
 .calculator-quote,.calculator-quote:link,.calculator-quote:visited{display:inline-flex;align-items:center;justify-content:center;margin-top:1.15rem;background:var(--sage-dark);color:#fff!important;text-decoration:none!important;padding:.88rem 1.25rem;border:1px solid var(--sage-dark);border-radius:999px;font-weight:800;box-shadow:none}
 .calculator-quote:hover,.calculator-quote:active{background:var(--ink);border-color:var(--ink);color:#fff!important;text-decoration:none!important}
-.calc-row{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1rem;margin:.7rem 0}.calc-row-title{font-weight:800;color:var(--ink);margin-bottom:.2rem}.calc-row-meta{font-size:.86rem;color:var(--muted)}.calc-price{display:inline-flex;align-items:center;min-height:40px;padding:.35rem .8rem;border-radius:999px;background:#e8ede6;font-weight:800;color:var(--sage-dark);white-space:nowrap}
+.calc-row{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1rem;margin:.7rem 0}.calc-row-title{font-weight:800;color:var(--ink);margin-bottom:.2rem}.calc-row-meta{font-size:.86rem;color:var(--muted)}.calc-field-label{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#7a837d;margin:0 0 .42rem}.calc-rate,.calc-subtotal{min-height:42px;display:flex;align-items:center;font-weight:750;white-space:nowrap}.calc-rate{color:#526553}.calc-subtotal{color:var(--ink);font-size:1.02rem}.calc-remove-space{height:1.65rem}
 button[kind="secondary"]{box-shadow:none!important}
 div[data-testid="stButton"] button{transition:background .18s ease,border-color .18s ease}
 .why{background:#e8ebe5;border-radius:30px;padding:3.4rem;margin:3rem 0}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.2rem}.why-item{border-top:1px solid #bfc7bd;padding-top:1.2rem}.why-item h3{font-size:1.15rem;margin:.4rem 0}.big-cta{background:var(--ink);border-radius:30px;padding:4rem;margin:4rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem}.big-cta h2{color:#fff!important;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 .6rem}.big-cta p{color:#cbd1cc;max-width:650px;margin:0}.big-cta a{white-space:nowrap;background:#fff;color:var(--ink);text-decoration:none;padding:1rem 1.3rem;border-radius:999px;font-weight:800}.contact-grid{align-items:flex-start}.contact-left{padding-top:0;min-height:580px;display:flex;flex-direction:column}.contact-left .contact-actions{margin-top:auto}.contact-response{margin:0 0 .8rem;padding:1rem 1.1rem;background:#eef0eb;border-radius:14px;color:var(--ink);font-size:.9rem;line-height:1.55}.contact-response strong{color:var(--sage-dark)}.contact-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:2rem}.stTextInput input,.stTextArea textarea{border-radius:12px!important;background:#fbfbf8!important}.stFormSubmitButton button{border-radius:999px!important;background:var(--ink)!important;color:#fff!important;border:0!important;font-weight:700!important}.stFormSubmitButton button p,.stFormSubmitButton button span{color:#fff!important}.stFormSubmitButton button:hover,.stFormSubmitButton button:focus{background:var(--sage-dark)!important;color:#fff!important}.stFormSubmitButton button:hover p,.stFormSubmitButton button:focus p{color:#fff!important}.site-footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;color:var(--muted);font-size:.85rem}.footer-brand-text{font:800 1.35rem 'Manrope';letter-spacing:-.055em;color:var(--ink);margin-bottom:.35rem}.footer-brand-text span{color:var(--sage)}.footer-details{text-align:right;line-height:1.8}.footer-details a{color:var(--muted);text-decoration:none}.contact-details{line-height:1.9}.contact-details a{color:var(--ink);text-decoration:none}.contact-actions .whatsapp{background:#526553;color:#fff;border:1px solid #526553}.back-to-top{position:fixed;right:24px;bottom:24px;z-index:9999;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ink);color:#fff!important;text-decoration:none;font:800 1.25rem 'Manrope';box-shadow:0 8px 24px rgba(23,32,27,.22);opacity:.92;transition:opacity .2s ease,transform .2s ease}.back-to-top:hover{opacity:1;transform:translateY(-2px)}
@@ -235,21 +235,23 @@ for group_key, work_ids in WORK_GROUPS:
         option_labels[wid] = f"{L[group_key]} · {L['work_'+wid]}"
 
 for idx, row in enumerate(list(st.session_state.calc_rows)):
-    cols = st.columns([2.4, 1, .75, 1.15, .45], gap="small")
+    st.markdown('<div class="calc-row-start"></div>', unsafe_allow_html=True)
+    cols = st.columns([2.5, 1.05, .95, 1.25, .38], gap="small")
     work_ids = list(PRICE_CONFIG.keys())
     current_index = work_ids.index(row["work"]) if row["work"] in work_ids else 0
     with cols[0]:
-        selected = st.selectbox(L["calc_work"], work_ids, index=current_index, format_func=lambda x: option_labels[x], key=f"calc_work_{idx}", label_visibility="collapsed")
+        selected = st.selectbox(L["calc_work"], work_ids, index=current_index, format_func=lambda x: option_labels[x], key=f"calc_work_{idx}")
     cfg = PRICE_CONFIG[selected]
     with cols[1]:
-        qty = st.number_input(L["calc_qty"], min_value=0.0, max_value=10000.0, value=float(row.get("qty",1.0)), step=1.0, key=f"calc_qty_{idx}", label_visibility="collapsed")
+        qty = st.number_input(L["calc_qty"], min_value=0.0, max_value=10000.0, value=float(row.get("qty",1.0)), step=1.0, key=f"calc_qty_{idx}")
     unit_label = L["unit_m2"] if cfg["unit"]=="m²" else L["unit_ml"] if cfg["unit"]=="ml" else L["unit_pc"]
     with cols[2]:
-        st.markdown(f"<div style='padding-top:.65rem;color:#68716b'>{unit_label}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='calc-field-label'>{L['calc_rate']}</div><div class='calc-rate'>{cfg['min']:,.0f}–{cfg['max']:,.0f} € / {unit_label}</div>".replace(",", " "), unsafe_allow_html=True)
     low, high = qty*cfg["min"], qty*cfg["max"]
     with cols[3]:
-        st.markdown(f"<div style='padding-top:.55rem' class='calc-price'>{low:,.0f}–{high:,.0f} €</div>".replace(",", " "), unsafe_allow_html=True)
+        st.markdown(f"<div class='calc-field-label'>{L['calc_line_total']}</div><div class='calc-subtotal'>{low:,.0f}–{high:,.0f} €</div>".replace(",", " "), unsafe_allow_html=True)
     with cols[4]:
+        st.markdown("<div class='calc-remove-space'></div>", unsafe_allow_html=True)
         if st.button("×", key=f"calc_remove_{idx}", help=L["calc_remove"]):
             st.session_state.calc_rows.pop(idx)
             st.rerun()
