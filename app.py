@@ -218,7 +218,7 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 """,unsafe_allow_html=True)
 
 st.markdown(f"""
-<div id="page-top"></div><div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
+<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
 <div class="hero {'hero-de' if lang=='de' else ''}"><div class="eyebrow">{L['eyebrow']}</div><h1>{L['hero_title']}</h1><p>{L['hero_text']}</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">{L['hero_cta']} →</a><a class="btn btn-secondary" href="#services">{L['hero_secondary']}</a><a class="btn btn-secondary" href="#calculateur">{L['nav_estimator']}</a></div></div>
 <div class="trustbar"><div class="trust"><span>✓</span>{L['trust1']}</div><div class="trust"><span>✓</span>{L['trust2']}</div><div class="trust"><span>✓</span>{L['trust3']}</div></div>
 <div id="services" class="section"><div class="kicker">{L['services_kicker']}</div><h2 class="section-title">{L['services_title']}</h2><p class="section-lead">{L['services_intro']}</p><div class="cards">
@@ -290,28 +290,37 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 
-st.markdown('<a id="back-to-top" class="back-to-top" href="#page-top" aria-label="Retour en haut">↑</a>', unsafe_allow_html=True)
+st.markdown('<a id="back-to-top" class="back-to-top" href="#" aria-label="Retour en haut">↑</a>', unsafe_allow_html=True)
 
 components.html("""
 <script>
 const doc = window.parent.document;
-doc.querySelectorAll('.nav a[href^="#"], .hero-actions a[href^="#"], a.calculator-quote[href^="#"]').forEach(link => {
-  if (!link.dataset.simetrikaNavBound) {
-    link.addEventListener('click', (e) => {
-      const selector = link.getAttribute('href');
-      if (!selector || selector === '#') return;
-      const target = doc.querySelector(selector);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({behavior:'auto', block:'start'});
-        try {
-          window.parent.history.replaceState(null, '', window.parent.location.pathname + window.parent.location.search);
-        } catch (_) {}
-      }
-    });
-    link.dataset.simetrikaNavBound = '1';
-  }
-});
+if (!window.parent.__simetrikaDelegatedNavBound) {
+  doc.addEventListener('click', (e) => {
+    const top = e.target.closest('#back-to-top');
+    if (top) {
+      e.preventDefault();
+      const scroller = doc.scrollingElement || doc.documentElement;
+      scroller.scrollTop = 0;
+      doc.body.scrollTop = 0;
+      return;
+    }
+
+    const link = e.target.closest('.nav a[href^="#"], .hero-actions a[href^="#"], a.calculator-quote[href^="#"], .contact-actions a[href^="#"]');
+    if (!link) return;
+    const selector = link.getAttribute('href');
+    if (!selector || selector === '#') return;
+    const target = doc.querySelector(selector);
+    if (!target) return;
+
+    e.preventDefault();
+    const scroller = doc.scrollingElement || doc.documentElement;
+    const topPos = target.getBoundingClientRect().top + scroller.scrollTop - 18;
+    scroller.scrollTop = topPos;
+    doc.body.scrollTop = topPos;
+  }, true);
+  window.parent.__simetrikaDelegatedNavBound = true;
+}
 function closeSimetrikaLightbox(){
   const old = doc.getElementById('simetrika-js-lightbox');
   if(old) old.remove();
