@@ -183,7 +183,7 @@ elif lang == "en":
 L.update(CALC_DE if lang == "de" else CALC_EN if lang == "en" else CALC_FR)
 
 st.markdown("""
-<style>
+<style>html{scroll-behavior:auto!important}
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
 :root{--ink:#17201b;--muted:#68716b;--paper:#f7f6f1;--white:#fff;--sage:#9aa79b;--sage-dark:#6f7d72;--line:#dedfd8}
 html{scroll-behavior:smooth}.stApp{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}.block-container{max-width:1180px;padding-top:1.3rem;padding-bottom:2rem}header[data-testid="stHeader"]{background:transparent}#MainMenu,footer{visibility:hidden}h1,h2,h3{font-family:'Manrope',sans-serif!important;letter-spacing:-.035em;color:var(--ink)!important}p{color:var(--muted);line-height:1.7}
@@ -218,7 +218,7 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 """,unsafe_allow_html=True)
 
 st.markdown(f"""
-<div id="top"></div><div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
+<div id="page-top"></div><div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
 <div class="hero {'hero-de' if lang=='de' else ''}"><div class="eyebrow">{L['eyebrow']}</div><h1>{L['hero_title']}</h1><p>{L['hero_text']}</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">{L['hero_cta']} →</a><a class="btn btn-secondary" href="#services">{L['hero_secondary']}</a><a class="btn btn-secondary" href="#calculateur">{L['nav_estimator']}</a></div></div>
 <div class="trustbar"><div class="trust"><span>✓</span>{L['trust1']}</div><div class="trust"><span>✓</span>{L['trust2']}</div><div class="trust"><span>✓</span>{L['trust3']}</div></div>
 <div id="services" class="section"><div class="kicker">{L['services_kicker']}</div><h2 class="section-title">{L['services_title']}</h2><p class="section-lead">{L['services_intro']}</p><div class="cards">
@@ -290,25 +290,11 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 
-st.markdown('<button id="back-to-top" class="back-to-top" type="button" aria-label="Retour en haut">↑</button>', unsafe_allow_html=True)
+st.markdown('<a id="back-to-top" class="back-to-top" href="#page-top" aria-label="Retour en haut">↑</a>', unsafe_allow_html=True)
 
 components.html("""
 <script>
 const doc = window.parent.document;
-const backToTop = doc.getElementById('back-to-top');
-if (backToTop) {
-  backToTop.onclick = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const scroller = doc.scrollingElement || doc.documentElement;
-    if (scroller && typeof scroller.scrollTo === 'function') {
-      scroller.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    } else {
-      doc.documentElement.scrollTop = 0;
-      doc.body.scrollTop = 0;
-    }
-  };
-}
 function closeSimetrikaLightbox(){
   const old = doc.getElementById('simetrika-js-lightbox');
   if(old) old.remove();
