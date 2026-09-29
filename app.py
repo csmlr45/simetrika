@@ -299,7 +299,14 @@ const backToTop = doc.getElementById('back-to-top');
 if (backToTop) {
   backToTop.onclick = (e) => {
     e.preventDefault();
-    window.parent.scrollTo({top: 0, behavior: 'smooth'});
+    e.stopPropagation();
+    const scroller = doc.scrollingElement || doc.documentElement;
+    if (scroller && typeof scroller.scrollTo === 'function') {
+      scroller.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    } else {
+      doc.documentElement.scrollTop = 0;
+      doc.body.scrollTop = 0;
+    }
   };
 }
 function closeSimetrikaLightbox(){
