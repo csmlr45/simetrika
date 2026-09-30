@@ -218,7 +218,7 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 """,unsafe_allow_html=True)
 
 st.markdown(f"""
-<div id="page-top"></div><div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
+<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
 <div class="hero {'hero-de' if lang=='de' else ''}"><div class="eyebrow">{L['eyebrow']}</div><h1>{L['hero_title']}</h1><p>{L['hero_text']}</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">{L['hero_cta']} →</a><a class="btn btn-secondary" href="#services">{L['hero_secondary']}</a><a class="btn btn-secondary" href="#calculateur">{L['nav_estimator']}</a></div></div>
 <div class="trustbar"><div class="trust"><span>✓</span>{L['trust1']}</div><div class="trust"><span>✓</span>{L['trust2']}</div><div class="trust"><span>✓</span>{L['trust3']}</div></div>
 <div id="services" class="section"><div class="kicker">{L['services_kicker']}</div><h2 class="section-title">{L['services_title']}</h2><p class="section-lead">{L['services_intro']}</p><div class="cards">
@@ -290,7 +290,7 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 
-st.markdown('<a id="back-to-top" class="back-to-top" href="#page-top" aria-label="Retour en haut">↑</a>', unsafe_allow_html=True)
+st.markdown(f'<a id="back-to-top" class="back-to-top" href="?lang={lang}" target="_self" aria-label="Retour en haut">↑</a>', unsafe_allow_html=True)
 
 components.html("""
 <script>
