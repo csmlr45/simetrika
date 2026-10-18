@@ -193,15 +193,19 @@ html{scroll-behavior:smooth}.stApp{background:var(--paper);color:var(--ink);font
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem;align-items:start}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:2rem;min-height:384px;box-sizing:border-box;display:flex;flex-direction:column}.card .num{flex:0 0 auto}.card h3{min-height:3.4rem}.card>p{min-height:7.2rem}.card>details{margin-top:auto}.num{color:var(--sage);font-weight:800;font-size:.82rem}.card h3{font-size:1.35rem;margin:2.4rem 0 .7rem}.card p{font-size:.95rem;margin:0}.service-link{display:inline-block;margin-top:1.2rem;color:var(--sage-dark);font-weight:800;text-decoration:none}.service-detail{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.9rem!important}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}.process-step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.6rem}.process-step h3{font-size:1.05rem;margin:.2rem 0 .7rem}.process-step p{font-size:.9rem;margin:0}.contact-actions{display:flex;gap:.55rem;flex-wrap:nowrap;margin-top:1.4rem;align-items:center}.contact-actions a{white-space:nowrap;flex:0 1 auto}.contact-actions a{padding:.72rem .82rem;border-radius:999px;text-decoration:none;font-weight:800;font-size:.82rem}.contact-actions .dark{background:var(--ink);color:#fff}.contact-actions .outline{border:1px solid var(--ink);color:var(--ink)}.about-copy{max-width:780px;font-size:1.02rem;margin:0 0 2rem}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem;align-items:start}.portfolio-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;min-height:610px;box-sizing:border-box}.portfolio-card img{width:100%;height:300px;object-fit:cover;display:block}.portfolio-copy{padding:1.5rem;display:flex;flex-direction:column;flex:1;min-height:290px;box-sizing:border-box}.portfolio-meta{font-size:.75rem;letter-spacing:.12em;color:var(--sage-dark);font-weight:800;text-transform:uppercase}.portfolio-copy h3{font-size:1.3rem;margin:.55rem 0 .65rem;min-height:5.25rem}.portfolio-copy>p{font-size:.92rem;margin:0;min-height:5.4rem}.portfolio-more{margin-top:auto;padding-top:1rem}.portfolio-more summary{cursor:pointer;color:var(--sage-dark);font-weight:800}.portfolio-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin-top:.9rem}.portfolio-gallery img{height:105px;border-radius:10px}.zoomable{display:block;cursor:zoom-in}.zoomable>img{transition:transform .18s ease,filter .18s ease}.zoomable:hover>img{transform:scale(1.015);filter:brightness(.94)}.lightbox{display:none;position:fixed;inset:0;z-index:99999;background:rgba(10,14,11,.92);padding:2rem;align-items:center;justify-content:center}.lightbox:target{display:flex}.lightbox-backdrop{position:absolute;inset:0;z-index:1}.lightbox img{position:relative;z-index:2;max-width:min(94vw,1400px);max-height:90vh;width:auto;height:auto;object-fit:contain;border-radius:12px;box-shadow:0 24px 70px rgba(0,0,0,.45)}.lightbox-close{position:fixed;z-index:100001;top:1.2rem;right:1.5rem;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--ink);text-decoration:none;font:700 1.6rem/1 'DM Sans';box-shadow:0 6px 24px rgba(0,0,0,.25)}
 .calculator-shell{background:#eef0eb;border:1px solid var(--line);border-radius:30px;padding:2.4rem;margin-top:2rem}.calculator-note{background:#fff7df;border:1px solid #ead8a4;border-radius:14px;padding:.85rem 1rem;color:#675b3a;font-size:.86rem;margin-bottom:1.4rem}
 #calculateur{padding-bottom:.4rem}
-.calc-ui-marker{height:0}
-div[data-testid="stVerticalBlock"]:has(> div > .calc-ui-marker){background:#f3f1ec;border:1px solid #ddd9d1;border-radius:24px;padding:1.55rem 1.6rem 1.7rem;margin-top:1.35rem;box-shadow:0 10px 30px rgba(30,34,31,.035)}
-div[data-testid="stVerticalBlock"]:has(> div > .calc-ui-marker) [data-testid="stSelectbox"]>div>div,
-div[data-testid="stVerticalBlock"]:has(> div > .calc-ui-marker) [data-testid="stNumberInput"]>div>div{background:#fff!important;border-color:#d8d4cc!important}
-div[data-testid="stVerticalBlock"]:has(> div > .calc-ui-marker) button{background:#fff;border-color:#d4d0c8;color:#303633}
-div[data-testid="stVerticalBlock"]:has(> div > .calc-ui-marker) button:hover{border-color:#8c8175;color:#171c19}
-#calculateur + div [data-testid="stHorizontalBlock"]{background:#f0f2ed;border:1px solid #dde2da;border-radius:20px;padding:.7rem .8rem;margin:.55rem 0}
-#calculateur + div [data-testid="stSelectbox"]>div>div,#calculateur + div [data-testid="stNumberInput"] input{background:#fff!important}
-#calculateur + div button{border-radius:12px}
+.st-key-estimator_panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.6rem;box-shadow:none}
+.st-key-estimator_panel [data-baseweb="select"]>div,
+.st-key-estimator_panel [data-baseweb="input"]{background:#fff!important;border:1px solid var(--line)!important;border-radius:10px!important;box-shadow:none!important}
+.st-key-estimator_panel [data-baseweb="input"]>div,
+.st-key-estimator_panel input,
+.st-key-estimator_panel [data-baseweb="select"]>div>div{background:transparent!important;color:var(--ink)!important}
+.st-key-estimator_panel [data-baseweb="select"]>div:focus-within,
+.st-key-estimator_panel [data-baseweb="input"]:focus-within{border-color:var(--sage-dark)!important;outline:2px solid #e8ebe5;outline-offset:1px}
+.st-key-estimator_panel button{background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:10px;box-shadow:none}
+.st-key-estimator_panel button:hover{background:#f7f8f5;border-color:var(--sage-dark)}
+.st-key-estimator_panel [data-testid="stNumberInput"] button{background:transparent!important;border:0;border-left:1px solid var(--line);border-radius:0}
+.st-key-estimator_panel .calculator-total{background:var(--paper);border:0;border-top:1px solid var(--line);border-radius:0;padding:1.2rem 0 .4rem}
+@media(max-width:800px){.st-key-estimator_panel{padding:1rem;border-radius:18px}}
 .calculator-total{background:#fff;border:1px solid #ddd9d1;border-radius:18px;padding:1.25rem 1.5rem;margin-top:1.35rem;color:#171c19}
 
 .calculator-total .label{color:#756f68;font-size:.7rem;font-weight:750;letter-spacing:.065em;text-transform:uppercase}
@@ -229,54 +233,55 @@ st.markdown(f"""
 """,unsafe_allow_html=True)
 
 # Complete, configurable estimator. Prices above are deliberately provisional.
-st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p><div class="calc-ui-marker"></div>""", unsafe_allow_html=True)
+st.markdown(f"""<div id="calculateur" class="section"><div class="kicker">{L['calc_kicker']}</div><h2 class="section-title">{L['calc_title']}</h2><p class="section-lead">{L['calc_intro']}</p></div>""", unsafe_allow_html=True)
 
-if "calc_rows" not in st.session_state:
-    st.session_state.calc_rows = [{"work":"peinture","qty":50.0}]
+with st.container(key="estimator_panel"):
+    if "calc_rows" not in st.session_state:
+        st.session_state.calc_rows = [{"work":"peinture","qty":50.0}]
 
-# Localized flat option labels; category remains visible in the label.
-option_labels = {}
-for group_key, work_ids in WORK_GROUPS:
-    for wid in work_ids:
-        option_labels[wid] = f"{L[group_key]} · {L['work_'+wid]}"
+    # Localized flat option labels; category remains visible in the label.
+    option_labels = {}
+    for group_key, work_ids in WORK_GROUPS:
+        for wid in work_ids:
+            option_labels[wid] = f"{L[group_key]} · {L['work_'+wid]}"
 
-for idx, row in enumerate(list(st.session_state.calc_rows)):
-    st.markdown('<div class="calc-row-start"></div>', unsafe_allow_html=True)
-    cols = st.columns([2.5, 1.05, .95, 1.25, .38], gap="small")
-    work_ids = list(PRICE_CONFIG.keys())
-    current_index = work_ids.index(row["work"]) if row["work"] in work_ids else 0
-    with cols[0]:
-        selected = st.selectbox(L["calc_work"], work_ids, index=current_index, format_func=lambda x: option_labels[x], key=f"calc_work_{idx}")
-    cfg = PRICE_CONFIG[selected]
-    with cols[1]:
-        qty = st.number_input(L["calc_qty"], min_value=0.0, max_value=10000.0, value=float(row.get("qty",1.0)), step=1.0, key=f"calc_qty_{idx}")
-    unit_label = L["unit_m2"] if cfg["unit"]=="m²" else L["unit_ml"] if cfg["unit"]=="ml" else L["unit_pc"]
-    with cols[2]:
-        st.markdown(f"<div class='calc-field-label'>{L['calc_rate']}</div><div class='calc-rate'>{cfg['min']:,.0f}–{cfg['max']:,.0f} € / {unit_label}</div>".replace(",", " "), unsafe_allow_html=True)
-    low, high = qty*cfg["min"], qty*cfg["max"]
-    with cols[3]:
-        st.markdown(f"<div class='calc-field-label'>{L['calc_line_total']}</div><div class='calc-subtotal'>{low:,.0f}–{high:,.0f} €</div>".replace(",", " "), unsafe_allow_html=True)
-    with cols[4]:
-        st.markdown("<div class='calc-remove-space'></div>", unsafe_allow_html=True)
-        if st.button("×", key=f"calc_remove_{idx}", help=L["calc_remove"]):
-            st.session_state.calc_rows.pop(idx)
+    for idx, row in enumerate(list(st.session_state.calc_rows)):
+        st.markdown('<div class="calc-row-start"></div>', unsafe_allow_html=True)
+        cols = st.columns([2.5, 1.05, .95, 1.25, .38], gap="small")
+        work_ids = list(PRICE_CONFIG.keys())
+        current_index = work_ids.index(row["work"]) if row["work"] in work_ids else 0
+        with cols[0]:
+            selected = st.selectbox(L["calc_work"], work_ids, index=current_index, format_func=lambda x: option_labels[x], key=f"calc_work_{idx}")
+        cfg = PRICE_CONFIG[selected]
+        with cols[1]:
+            qty = st.number_input(L["calc_qty"], min_value=0.0, max_value=10000.0, value=float(row.get("qty",1.0)), step=1.0, key=f"calc_qty_{idx}")
+        unit_label = L["unit_m2"] if cfg["unit"]=="m²" else L["unit_ml"] if cfg["unit"]=="ml" else L["unit_pc"]
+        with cols[2]:
+            st.markdown(f"<div class='calc-field-label'>{L['calc_rate']}</div><div class='calc-rate'>{cfg['min']:,.0f}–{cfg['max']:,.0f} € / {unit_label}</div>".replace(",", " "), unsafe_allow_html=True)
+        low, high = qty*cfg["min"], qty*cfg["max"]
+        with cols[3]:
+            st.markdown(f"<div class='calc-field-label'>{L['calc_line_total']}</div><div class='calc-subtotal'>{low:,.0f}–{high:,.0f} €</div>".replace(",", " "), unsafe_allow_html=True)
+        with cols[4]:
+            st.markdown("<div class='calc-remove-space'></div>", unsafe_allow_html=True)
+            if st.button("×", key=f"calc_remove_{idx}", help=L["calc_remove"]):
+                st.session_state.calc_rows.pop(idx)
+                st.rerun()
+        st.session_state.calc_rows[idx] = {"work":selected,"qty":qty}
+
+    add_col, reset_col = st.columns([1,4])
+    with add_col:
+        if st.button("+ "+L["calc_add"], key="calc_add"):
+            st.session_state.calc_rows.append({"work":"peinture","qty":10.0})
             st.rerun()
-    st.session_state.calc_rows[idx] = {"work":selected,"qty":qty}
 
-add_col, reset_col = st.columns([1,4])
-with add_col:
-    if st.button("+ "+L["calc_add"], key="calc_add"):
-        st.session_state.calc_rows.append({"work":"peinture","qty":10.0})
-        st.rerun()
+    total_low = sum(r["qty"]*PRICE_CONFIG[r["work"]]["min"] for r in st.session_state.calc_rows)
+    total_high = sum(r["qty"]*PRICE_CONFIG[r["work"]]["max"] for r in st.session_state.calc_rows)
+    if st.session_state.calc_rows:
+        total_txt = f"{total_low:,.0f} – {total_high:,.0f} €".replace(",", " ")
+        st.markdown(f"""<div class="calculator-total"><div class="label">{L['calc_total']}</div><div class="price">{total_txt}</div></div><p class="calculator-disclaimer">{L['calc_disclaimer']}</p><a class="calculator-quote" href="#contact">{L['calc_quote']} →</a>""", unsafe_allow_html=True)
+    else:
+        st.info(L["calc_empty"])
 
-total_low = sum(r["qty"]*PRICE_CONFIG[r["work"]]["min"] for r in st.session_state.calc_rows)
-total_high = sum(r["qty"]*PRICE_CONFIG[r["work"]]["max"] for r in st.session_state.calc_rows)
-if st.session_state.calc_rows:
-    total_txt = f"{total_low:,.0f} – {total_high:,.0f} €".replace(",", " ")
-    st.markdown(f"""<div class="calculator-total"><div class="label">{L['calc_total']}</div><div class="price">{total_txt}</div></div><p class="calculator-disclaimer">{L['calc_disclaimer']}</p><a class="calculator-quote" href="#contact">{L['calc_quote']} →</a>""", unsafe_allow_html=True)
-else:
-    st.info(L["calc_empty"])
-st.markdown("</div>", unsafe_allow_html=True)
 
 st.markdown(f"""
 <div id="realisations" class="section"><div class="kicker">{L['portfolio_kicker']}</div><h2 class="section-title">{L['portfolio_title']}</h2><p class="section-lead">{L['portfolio_intro']}</p><div class="portfolio-grid">
