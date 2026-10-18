@@ -104,6 +104,91 @@ EN = {
 "response_24h":"Tell us about your project. We will get back to you by phone or email within a maximum of 24 hours.","form_success":"Thank you! Your request has been recorded.","form_warning":"Please enter your name, a way to contact you and a few details about your project."
 }
 
+LB = {
+  "nav_services": "Servicer",
+  "nav_estimator": "Präisrechner",
+  "nav_projects": "Referenzen",
+  "nav_about": "Iwwer eis",
+  "nav_contact": "Kontakt",
+  "quote": "En Devis ufroen",
+  "eyebrow": "RENOVATIOUN VU GEBAIER • LËTZEBUERG",
+  "hero_title": "Äre Renovatiounsprojet, vun A bis Z koordinéiert.",
+  "hero_text": "Simetrika koordinéiert Är Aarbechten, beréit Iech a begleet Iech bei der Renovatioun vun Haiser, Appartementer a Geschäftslokaler zu Lëtzebuerg.",
+  "hero_cta": "En Devis ufroen",
+  "hero_secondary": "Eis Servicer entdecken",
+  "trust1": "Perséinlech Begleedung",
+  "trust2": "Léisungen no Mooss",
+  "trust3": "Koordinatioun vun den Aarbechten",
+  "services_kicker": "EIS SERVICER",
+  "services_title": "Déi passend Léisung fir all Projet.",
+  "services_intro": "Vun der kompletter Renovatioun vun Ärem Banneraum iwwer Aarbechten dobausse bis zu méi klenge Verbesserungen: Simetrika begleet Iech perséinlech.",
+  "s1": "Renovatioun bannen",
+  "s1d": "Ëmbau a Renovatioun vu Kichen, Buedzëmmeren, Wunnraim, Schlofzëmmeren an Trapen, mat besonneschem Wäert op eng propper Ausféierung a Funktionalitéit.",
+  "s2": "Renovatioun dobaussen",
+  "s2d": "Renovatioun a Verbesserung vun Ärem Gebai vu baussen: Fassad, Fënsteren an Daach, mat Léisungen, déi zum Zoustand vum Gebai an zu Ärem Projet passen.",
+  "s3": "Kleng Aarbechten & Ariichtung",
+  "s3d": "Gezielten Aarbechte fir Är Raim ze renovéieren, opzefrëschen oder ze verbesseren, ouni eng komplett Renovatioun ze maachen.",
+  "s1more": "Jee no Projet kënnen d’Aarbechte Sträichen, Verbotzen, Buedembeläg, Plättercher, Plafongen an déi néideg Elektro- a Sanitärinstallatiounen ëmfaassen. Simetrika begleet déi eenzel Etappe bis bei déi lescht Detailer.",
+  "s2more": "Simetrika hëlleft Iech bei der Organisatioun an der Begleedung vun den Aarbechten dobaussen a koordinéiert bei Bedarf déi verschidden Handwierker, fir Äre Projet méi einfach ëmzesetzen.",
+  "s3more": "Sträichen, Verbotzen, Plättercher, Buedembeläg, Holzbiedem a Laminat: Simetrika mécht an organiséiert déi néideg Aarbechten, fir e Raum nees an d’Rei ze setzen, d’Ofschlossaarbechten ze verbesseren oder en un Är Besoinen unzepassen.",
+  "more": "Méi Informatiounen",
+  "projects_kicker": "EIS APPROCHE",
+  "projects_title": "Äre Projet, mat Suergfalt a Präzisioun begleet.",
+  "projects_text": "Mat perséinlechem Know-how an engem Netzwierk vu Partner koordinéiert Simetrika déi verschidden Etappe vun Ärer Renovatioun.",
+  "why_kicker": "IWWER SIMETRIKA",
+  "why_title": "Een Uspriechpartner, vum éischte Gespréich bis bei déi lescht Detailer.",
+  "why1": "International Erfarung",
+  "why1d": "De Georgel Rotaru, Koordinator vu Bauaarbechten, huet seng Erfarung a Rumänien, a Spuenien an zu Lëtzebuerg gesammelt.",
+  "why2": "E Projet no Mooss",
+  "why2d": "All Projet gëtt no Äre Besoinen, Äre Wënsch an de Besonneschheete vun Äre Raim geplangt.",
+  "why3": "Perséinlech Begleedung",
+  "why3d": "Qualitéit, Suergfalt, Zefriddenheet vun de Clienten an d’Anhale vun den Delaië stinn am Mëttelpunkt vun eiser Aarbecht.",
+  "cta_title": "Eng Renovatioun no Mooss geplangt?",
+  "cta_text": "Kontaktéiert Simetrika, fir iwwer Äre Projet ze schwätzen an e perséinlechen Devis ze kréien.",
+  "cta_button": "Iwwer mäi Projet schwätzen",
+  "contact_kicker": "KONTAKT",
+  "contact_title": "Beschreift eis Äre Projet.",
+  "contact_text": "Schéckt eis déi wichtegst Informatiounen iwwer Äre Projet. Simetrika mellt sech bei Iech, fir déi nächst Schrëtt ze beschwätzen.",
+  "name": "Numm",
+  "email": "E-Mail-Adress",
+  "phone": "Telefon",
+  "project": "Äre Projet",
+  "project_ph": "Zort vun den Aarbechten, Uertschaft, betraffe Raim, gewënschten Zäitraum …",
+  "send": "Meng Ufro schécken",
+  "process_kicker": "WÉI LEEFT ET OF?",
+  "process_title": "Äre Projet, Schrëtt fir Schrëtt",
+  "process_intro": "Eng kloer a strukturéiert Begleedung, vum éischte Gespréich bis zur Ausféierung vun den Aarbechten.",
+  "p1": "1. Éischte Kontakt",
+  "p1d": "Dir erzielt eis vun Ärem Projet, Äre Besoinen an Ären Erwaardungen iwwer Telefon, WhatsApp oder eise Formulaire.",
+  "p2": "2. Gespréich & Visitt",
+  "p2d": "Mir beschwätzen déi geplangten Aarbechten a maachen, wann néideg, eng Visitt op der Plaz, fir Äre Projet anzeschätzen.",
+  "p3": "3. Propositioun & Devis",
+  "p3d": "Op Basis vun de gemeinsam festgeluechte Besoine preparéiere mir eng kloer Propositioun an e passenden Devis fir Äre Projet.",
+  "p4": "4. Ausféierung & Begleedung",
+  "p4d": "Simetrika mécht a begleet d’Aarbechte bis bei déi lescht Detailer a koordinéiert bei Bedarf déi verschidden Handwierker.",
+  "about_text": "Hannert Simetrika steet de <strong>Georgel Rotaru</strong>, Koordinator vu Bauaarbechte mat Erfarung aus Rumänien, Spuenien a Lëtzebuerg.<br><br>De Georgel begleet all Projet perséinlech, vum éischte Gespréich bis bei déi lescht Detailer. Jee no Besoin mécht Simetrika d’Aarbechte selwer a koordinéiert spezialiséiert Partner, fir en einfachen an ofgestëmmten Oflaf ze garantéieren.<br><br><strong>Eng direkt Kommunikatioun, passend Léisungen an een Uspriechpartner wärend Ärem ganze Projet.</strong>",
+  "portfolio_kicker": "EIS REFERENZEN",
+  "portfolio_title": "Eng Auswiel vun eise Projeten.",
+  "portfolio_intro": "Entdeckt dräi Projeten, déi d’Villfalt vun den Aarbechte weisen, déi Simetrika ausgeféiert a koordinéiert huet.",
+  "footer": "Simetrika · 1 rue Ermesinde · L-1469 Luxembourg",
+  "roof_meta": "Langsur · Daach",
+  "roof_title": "Renovatioun vun engem Daach",
+  "roof_desc": "Daachrenovatioun zu Langsur, mat Aarbechten un der Konstruktioun an un der Daachdeckung.",
+  "kitchen_meta": "Renovatioun bannen",
+  "kitchen_title": "Renovatioun vun enger Kichen",
+  "kitchen_desc": "Renovatioun an Ariichtung vun enger Kichen, mat Montage vun de Miwwelen, der Aarbechtsplack an der Réckwand.",
+  "pool_meta": "Aarbechten dobaussen",
+  "pool_title": "Eng Terrass ronderëm eng Schwämm",
+  "pool_desc": "Bau vun enger Terrass ronderëm eng Schwämm, mat Virbereedung vun der Ënnerkonstruktioun a Verleeë vum Belag.",
+  "view_project": "De Projet kucken",
+  "call": "Uruffen",
+  "email_btn": "E-Mail",
+  "footer_tagline": "Perséinlecht Know-how",
+  "response_24h": "Beschreift eis Äre Projet. Mir mellen eis bannent maximal 24 Stonnen iwwer Telefon oder E-Mail bei Iech.",
+  "form_success": "Merci! Är Ufro gouf erfaasst.",
+  "form_warning": "Gitt wgl. Ären Numm, eng Kontaktméiglechkeet an e puer Informatiounen iwwer Äre Projet un."
+}
+
 # PROVISIONAL TEST PRICES — replace with Georgel's confirmed tariffs later.
 PRICE_CONFIG = {
     "peinture": {"unit": "m²", "min": 18, "max": 30},
@@ -161,6 +246,53 @@ CALC_EN = {
 "unit_pc":"piece","unit_ml":"linear metre","unit_m2":"m²"
 }
 
+CALC_LB = {
+  "calc_kicker": "PRÄISRECHNER",
+  "calc_title": "Schätzt Äre Projet mat e puer Klicks an.",
+  "calc_intro": "Wielt déi gewënschten Aarbechten a gitt d’Quantitéiten un. Dir kritt direkt eng ongeféier Präisspann fir Äre Projet.",
+  "calc_provisional": "Virleefeg Demonstratiounspräisser — si ginn duerch déi bestätegt Präisser vu Simetrika ersat.",
+  "calc_add": "Aarbechten derbäisetzen",
+  "calc_empty": "Setzt eng oder méi Leeschtungen derbäi, fir eng Schätzung ze kréien.",
+  "calc_work": "Leeschtung",
+  "calc_qty": "Quantitéit",
+  "calc_unit": "Eenheet",
+  "calc_range": "Schätzung",
+  "calc_rate": "Richtpräis",
+  "calc_line_total": "Zwëschentotal",
+  "calc_remove": "Ewechhuelen",
+  "calc_total": "Onverbindlech Schätzung vum Projet",
+  "calc_disclaimer": "Dës Schätzung déngt als Orientéierung an ass keen Devis. Den definitive Präis hänkt ënner anerem vum Zoustand vum Ënnergrond, de gewielte Materialien, der Zougänglechkeet an de Bedéngungen op der Baustell of. En definitiven Devis gëtt no der Bewäertung vum Projet erstallt.",
+  "calc_quote": "E geneeën Devis ufroen",
+  "calc_select": "Eng Leeschtung wielen",
+  "calc_cat_walls": "Maueren & Sträichen",
+  "calc_cat_floors": "Biedem",
+  "calc_cat_tiles": "Plättercher",
+  "calc_cat_ext": "Dobaussen",
+  "calc_cat_demo": "Demontage & Ofbroch",
+  "calc_cat_elec": "Elektro",
+  "calc_cat_plumb": "Sanitär",
+  "calc_cat_kitchen": "Kichen",
+  "work_peinture": "Sträichen",
+  "work_enduit": "Spachtelen / Verbotzen",
+  "work_stratifie": "Laminat",
+  "work_parquet": "Parkett",
+  "work_vinyle": "Vinylbuedem",
+  "work_carrelage_sol": "Buedemplättercher",
+  "work_carrelage_mur": "Wandplättercher",
+  "work_terrasse": "Terrass",
+  "work_facade": "Fassad",
+  "work_demolition": "Demontage / Ofbroch",
+  "work_prise": "Steckdous",
+  "work_luminaire": "Montage vun enger Luucht",
+  "work_lavabo": "Montage vun engem Lavabo",
+  "work_wc": "Montage vun enger Toilette",
+  "work_robinetterie": "Armaturen",
+  "work_cuisine": "Montage / Ariichtung vun enger Kichen",
+  "unit_pc": "Stéck",
+  "unit_ml": "lafende Meter",
+  "unit_m2": "m²"
+}
+
 WORK_GROUPS = [
 ("calc_cat_walls", ["peinture","enduit"]),
 ("calc_cat_floors", ["stratifie","parquet","vinyle"]),
@@ -173,14 +305,16 @@ WORK_GROUPS = [
 ]
 
 lang = st.query_params.get("lang", "fr")
-if lang not in ("fr", "de", "en"):
+if lang not in ("fr", "de", "en", "lb"):
     lang = "fr"
 if lang == "de":
     L.update(DE)
 elif lang == "en":
     L.update(EN)
+elif lang == "lb":
+    L.update(LB)
 
-L.update(CALC_DE if lang == "de" else CALC_EN if lang == "en" else CALC_FR)
+L.update(CALC_LB if lang == "lb" else CALC_DE if lang == "de" else CALC_EN if lang == "en" else CALC_FR)
 
 st.markdown("""
 <style>html{scroll-behavior:auto!important}
@@ -224,7 +358,7 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 """,unsafe_allow_html=True)
 
 st.markdown(f"""
-<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
+<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a><a class="{'active' if lang=='lb' else ''}" href="?lang=lb" target="_self" title="Lëtzebuergesch">LB</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
 <div class="hero {'hero-de' if lang=='de' else ''}"><div class="eyebrow">{L['eyebrow']}</div><h1>{L['hero_title']}</h1><p>{L['hero_text']}</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">{L['hero_cta']} →</a><a class="btn btn-secondary" href="#services">{L['hero_secondary']}</a><a class="btn btn-secondary" href="#calculateur">{L['nav_estimator']}</a></div></div>
 <div class="trustbar"><div class="trust"><span>✓</span>{L['trust1']}</div><div class="trust"><span>✓</span>{L['trust2']}</div><div class="trust"><span>✓</span>{L['trust3']}</div></div>
 <div id="services" class="section"><div class="kicker">{L['services_kicker']}</div><h2 class="section-title">{L['services_title']}</h2><p class="section-lead">{L['services_intro']}</p><div class="cards">
