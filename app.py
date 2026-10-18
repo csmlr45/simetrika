@@ -204,7 +204,9 @@ html{scroll-behavior:smooth}.stApp{background:var(--paper);color:var(--ink);font
 .st-key-estimator_panel button{background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:10px;box-shadow:none}
 .st-key-estimator_panel button:hover{background:#f7f8f5;border-color:var(--sage-dark)}
 .st-key-estimator_panel [data-testid="stNumberInput"] button{background:transparent!important;border:0;border-left:1px solid var(--line);border-radius:0}
-.st-key-estimator_panel .calculator-total{background:var(--paper);border:0;border-top:1px solid var(--line);border-radius:0;padding:1.2rem 0 .4rem}
+.st-key-estimator_panel .calculator-total{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:1.35rem 0 .5rem;box-shadow:none}
+.st-key-estimator_panel .calculator-total .label{color:var(--muted);font-size:.72rem;letter-spacing:.08em}
+.st-key-estimator_panel .calculator-total .price{font-family:"Manrope",sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:600;line-height:1.25;margin:.4rem 0 0;color:var(--ink)}
 @media(max-width:800px){.st-key-estimator_panel{padding:1rem;border-radius:18px}}
 .calculator-total{background:#fff;border:1px solid #ddd9d1;border-radius:18px;padding:1.25rem 1.5rem;margin-top:1.35rem;color:#171c19}
 
