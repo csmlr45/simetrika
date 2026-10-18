@@ -316,6 +316,9 @@ elif lang == "lb":
 
 L.update(CALC_LB if lang == "lb" else CALC_DE if lang == "de" else CALC_EN if lang == "en" else CALC_FR)
 
+L["nav_process"] = {"fr": "Déroulement", "de": "Ablauf", "en": "Process", "lb": "Oflaf"}[lang]
+L["nav_estimator_short"] = {"fr": "Estimateur", "de": "Preisrechner", "en": "Estimator", "lb": "Präisrechner"}[lang]
+
 st.markdown("""
 <style>html{scroll-behavior:auto!important}
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
@@ -359,7 +362,7 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 """,unsafe_allow_html=True)
 
 st.markdown(f"""
-<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#apropos">{L['nav_about']}</a><a href="#contact">{L['nav_contact']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a><a class="{'active' if lang=='lb' else ''}" href="?lang=lb" target="_self" title="Lëtzebuergesch">LU</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
+<div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator_short']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#processus">{L['nav_process']}</a><a href="#apropos">{L['nav_about']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a><a class="{'active' if lang=='lb' else ''}" href="?lang=lb" target="_self" title="Lëtzebuergesch">LU</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
 <div class="hero {'hero-de' if lang=='de' else ''}"><div class="eyebrow">{L['eyebrow']}</div><h1>{L['hero_title']}</h1><p>{L['hero_text']}</p><div class="hero-actions"><a class="btn btn-primary" href="#contact">{L['hero_cta']} →</a><a class="btn btn-secondary" href="#services">{L['hero_secondary']}</a><a class="btn btn-secondary" href="#calculateur">{L['nav_estimator']}</a></div></div>
 <div class="trustbar"><div class="trust"><span>✓</span>{L['trust1']}</div><div class="trust"><span>✓</span>{L['trust2']}</div><div class="trust"><span>✓</span>{L['trust3']}</div></div>
 <div id="services" class="section"><div class="kicker">{L['services_kicker']}</div><h2 class="section-title">{L['services_title']}</h2><p class="section-lead">{L['services_intro']}</p><div class="cards">
