@@ -358,8 +358,73 @@ button[kind="secondary"]{box-shadow:none!important}
 div[data-testid="stButton"] button{transition:background .18s ease,border-color .18s ease}
 .why{background:#e8ebe5;border-radius:30px;padding:3.4rem;margin:3rem 0}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.2rem}.why-item{border-top:1px solid #bfc7bd;padding-top:1.2rem}.why-item h3{font-size:1.15rem;margin:.4rem 0}.big-cta{background:var(--ink);border-radius:30px;padding:4rem;margin:4rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem}.big-cta h2{color:#fff!important;font-size:clamp(2rem,4vw,3.2rem);margin:0 0 .6rem}.big-cta p{color:#cbd1cc;max-width:650px;margin:0}.big-cta a{white-space:nowrap;background:#fff;color:var(--ink);text-decoration:none;padding:1rem 1.3rem;border-radius:999px;font-weight:800}.contact-grid{align-items:flex-start}.contact-left{padding-top:0;min-height:580px;display:flex;flex-direction:column}.contact-left .contact-actions{margin-top:auto}.contact-response{margin:0 0 .8rem;padding:1rem 1.1rem;background:#eef0eb;border-radius:14px;color:var(--ink);font-size:.9rem;line-height:1.55}.contact-response strong{color:var(--sage-dark)}.contact-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:2rem}.stTextInput input,.stTextArea textarea{border-radius:12px!important;background:#fbfbf8!important}.stFormSubmitButton button{border-radius:999px!important;background:var(--ink)!important;color:#fff!important;border:0!important;font-weight:700!important}.stFormSubmitButton button p,.stFormSubmitButton button span{color:#fff!important}.stFormSubmitButton button:hover,.stFormSubmitButton button:focus{background:var(--sage-dark)!important;color:#fff!important}.stFormSubmitButton button:hover p,.stFormSubmitButton button:focus p{color:#fff!important}.site-footer{border-top:1px solid var(--line);margin-top:4rem;padding:2rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;color:var(--muted);font-size:.85rem}.footer-brand-text{font:800 1.35rem 'Manrope';letter-spacing:-.055em;color:var(--ink);margin-bottom:.35rem}.footer-brand-text span{color:var(--sage)}.footer-details{text-align:right;line-height:1.8}.footer-details a{color:var(--muted);text-decoration:none}.contact-details{line-height:1.9}.contact-details a{color:var(--ink);text-decoration:none}.contact-actions .whatsapp{background:#526553;color:#fff;border:1px solid #526553}.back-to-top{border:0;cursor:pointer;position:fixed;right:24px;bottom:24px;z-index:9999;width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--ink);color:#fff!important;text-decoration:none;font:800 1.25rem 'Manrope';box-shadow:0 8px 24px rgba(23,32,27,.22);opacity:.92;transition:opacity .2s ease,transform .2s ease}.back-to-top:hover{opacity:1;transform:translateY(-2px)}
 @media(max-width:800px){.back-to-top{right:14px;bottom:14px;width:42px;height:42px}.nav .pill{display:none}.contact-left{min-height:0;display:block}.contact-left .contact-actions{margin-top:1.4rem}.site-footer{flex-direction:column}.footer-details{text-align:left}.card{min-height:0}.card h3,.card>p,.portfolio-copy h3,.portfolio-copy>p{min-height:0}.card>details,.portfolio-more{margin-top:1rem}.nav>a:not(.pill){display:none}.lang-switch a{display:inline-block!important}.hero{padding:3rem 1.6rem;min-height:520px}.cards,.trustbar,.why-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}.portfolio-card img{height:280px}.big-cta{padding:2.3rem 1.6rem;flex-direction:column;align-items:flex-start}.why{padding:2.2rem 1.4rem}.calculator-shell{padding:1.3rem}.contact-actions{flex-wrap:wrap}.project-main,.project-small{min-height:320px}}
+.legal-page{max-width:850px;margin:1rem auto 4rem;line-height:1.8;color:var(--ink)}
+.legal-page h1{font-family:Manrope,sans-serif;font-size:2.3rem;margin:1.8rem 0 1rem}
+.legal-page h2{font-size:1.15rem;margin:2rem 0 .6rem}
+.legal-page p{font-size:1rem}
+.legal-back{display:inline-block;margin-bottom:2rem;color:var(--ink)!important}
+.legal-draft{background:#f6eddb;border:1px solid #e6d5b3;border-radius:12px;padding:1rem 1.2rem;margin-bottom:2rem}
+.legal-page mark{background:#f6eddb;color:#665027;padding:.12rem .3rem;box-decoration-break:clone}
+.legal-footer{display:flex;gap:1.3rem;flex-wrap:wrap;padding:0 0 1.5rem;font-size:.82rem}
+.legal-footer a{color:var(--muted)!important}
 </style>
 """,unsafe_allow_html=True)
+
+
+# Draft legal pages for review with the business owner.
+LEGAL_DRAFTS = {
+    "mentions-legales": ("Mentions légales", """
+<h2>Éditeur du site</h2>
+<p><strong>Dénomination et forme juridique :</strong> Simetrika Sàrl — <mark>À confirmer : dénomination officielle et forme juridique</mark></p>
+<p><strong>Siège social :</strong> 1 rue Ermesinde, L-1469 Luxembourg — <mark>À confirmer : adresse actuelle du siège</mark></p>
+<p><strong>RCS Luxembourg :</strong> <mark>À compléter : numéro RCS et extrait récent</mark></p>
+<p><strong>Numéro de TVA :</strong> <mark>À compléter : numéro LU ou statut applicable</mark></p>
+<p><strong>Capital social :</strong> <mark>À compléter : montant figurant dans les documents de la société</mark></p>
+<p><strong>Représentant légal :</strong> <mark>À confirmer : nom et qualité du gérant</mark></p>
+<h2>Activité et autorisation</h2>
+<p><mark>À compléter : activités autorisées, numéro d’autorisation d’établissement, autorité ayant délivré l’autorisation et ses coordonnées. Ajouter les références professionnelles applicables.</mark></p>
+<h2>Coordonnées</h2>
+<p><strong>E-mail :</strong> contact@simetrika.lu — <mark>À confirmer : adresse suivie par l’entreprise</mark></p>
+<p><strong>Téléphone :</strong> <mark>À compléter : numéro professionnel à publier</mark></p>
+<h2>Hébergement et contenu</h2>
+<p><mark>À compléter après le choix de l’hébergement final : nom et coordonnées du prestataire.</mark></p>
+<p><mark>À confirmer : droits d’utilisation du logo, des photos de chantier et des autres contenus publiés.</mark></p>
+<h2>Estimateur de prix</h2>
+<p>L’estimation est indicative et ne constitue pas un devis. Une offre définitive est établie après évaluation du projet.</p>
+<p><mark>À valider avant publication : tarifs réels, TVA incluse ou exclue, matériaux et main-d’œuvre inclus ou exclus, frais éventuels et limites de l’estimation.</mark></p>
+"""),
+    "confidentialite": ("Politique de confidentialité", """
+<h2>Responsable du traitement</h2>
+<p>Simetrika Sàrl — <mark>À confirmer : identité et adresse officielles de la société.</mark></p>
+<p><strong>Contact pour les données personnelles :</strong> <mark>À confirmer : adresse e-mail à utiliser pour exercer ses droits.</mark></p>
+<h2>Données et finalités</h2>
+<p>Le formulaire prévoit le nom, l’adresse e-mail, le téléphone et la description du projet, afin de répondre aux demandes de renseignements, de rappel ou de devis.</p>
+<p><mark>À confirmer : champs obligatoires, destinataires réels des demandes et fonctionnement final du formulaire.</mark></p>
+<h2>Base juridique</h2>
+<p><mark>À valider selon la demande : mesures précontractuelles pour une demande de devis ; base adaptée pour les autres demandes. Préciser les intérêts poursuivis si l’intérêt légitime est retenu.</mark></p>
+<h2>Destinataires et prestataires</h2>
+<p><mark>À compléter : personnes habilitées chez Simetrika, hébergeur, fournisseur de messagerie, service d’envoi du formulaire et autres prestataires ayant accès aux données.</mark></p>
+<p><mark>À vérifier : éventuels transferts hors de l’Espace économique européen et garanties applicables.</mark></p>
+<h2>Durée de conservation</h2>
+<p><mark>À définir : durée ou critères de conservation des demandes sans suite, puis règles applicables lorsqu’une demande devient un dossier client. Ne pas conserver les demandes indéfiniment.</mark></p>
+<h2>Vos droits</h2>
+<p>Selon les conditions prévues par le RGPD, vous pouvez demander l’accès à vos données, leur rectification, leur effacement, la limitation du traitement, vous opposer à certains traitements et demander la portabilité des données. Lorsqu’un traitement repose sur votre consentement, vous pouvez le retirer à tout moment.</p>
+<p><mark>À compléter : procédure et adresse de contact pour exercer ces droits.</mark></p>
+<p>Vous pouvez également introduire une réclamation auprès de la <a href="https://cnpd.public.lu" target="_blank" rel="noopener">Commission nationale pour la protection des données (CNPD)</a>.</p>
+<h2>Cookies et services externes</h2>
+<p><mark>À vérifier sur le site final : cookies et stockage local, finalités, fournisseurs et durées. Identifier ceux strictement nécessaires et ceux nécessitant un consentement préalable.</mark></p>
+<p><mark>À décider : statistiques de fréquentation, outils publicitaires, vidéos ou cartes intégrées. Si nécessaire, prévoir un choix accepter/refuser et un moyen de modifier ce choix.</mark></p>
+<p><mark>À documenter : chargement des polices et images externes, liens WhatsApp et données techniques traitées par les prestataires.</mark></p>
+<h2>Mise à jour</h2>
+<p><mark>À compléter après validation : date de mise à jour de la présente politique.</mark></p>
+"""),
+}
+legal_page = st.query_params.get("page", "")
+if legal_page in LEGAL_DRAFTS:
+    legal_title, legal_body = LEGAL_DRAFTS[legal_page]
+    st.markdown(f"""<main class="legal-page"><a class="legal-back" href="?lang={lang}" target="_self">← Retour au site</a><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><h1>{legal_title}</h1><div class="legal-draft"><strong>VERSION DE TRAVAIL — NON FINALISÉE</strong><br>Document en français à compléter et à valider avec Simetrika avant la mise en ligne définitive. Les passages surlignés indiquent les informations manquantes.</div>{legal_body}</main>""", unsafe_allow_html=True)
+    st.stop()
+
 
 st.markdown(f"""
 <div class="topbar"><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><div class="nav"><a href="#services">{L['nav_services']}</a><a href="#calculateur">{L['nav_estimator_short']}</a><a href="#realisations">{L['nav_projects']}</a><a href="#processus">{L['nav_process']}</a><a href="#apropos">{L['nav_about']}</a><span class="lang-switch"><a class="{'active' if lang=='fr' else ''}" href="?lang=fr" target="_self">FR</a><a class="{'active' if lang=='de' else ''}" href="?lang=de" target="_self">DE</a><a class="{'active' if lang=='en' else ''}" href="?lang=en" target="_self">EN</a><a class="{'active' if lang=='lb' else ''}" href="?lang=lb" target="_self" title="Lëtzebuergesch">LU</a></span><a class="pill" href="#contact">{L['quote']}</a></div></div>
@@ -484,3 +549,6 @@ with right:
    if name and (email or phone) and project: st.success(L["form_success"])
    else: st.warning(L["form_warning"])
 st.markdown(f"""<div class="site-footer"><div class="footer-brand"><div class="footer-brand-text">SIMETRIKA<span>.</span></div><span>{L['footer_tagline']}</span></div><div class="footer-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde · L-1469 Luxembourg<br><a href="mailto:contact@simetrika.lu">contact@simetrika.lu</a><br>© 2026</div></div>""",unsafe_allow_html=True)
+
+
+st.markdown(f'''<div class="legal-footer"><a href="?lang={lang}&amp;page=mentions-legales" target="_self">Mentions légales · brouillon</a><a href="?lang={lang}&amp;page=confidentialite" target="_self">Confidentialité &amp; cookies · brouillon</a></div>''', unsafe_allow_html=True)
