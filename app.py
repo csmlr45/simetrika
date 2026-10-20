@@ -215,7 +215,7 @@ CALC_FR = {
 "calc_provisional":"Tarifs de démonstration provisoires — ils seront remplacés par les tarifs confirmés de Simetrika.",
 "calc_add":"Ajouter des travaux","calc_empty":"Ajoutez une ou plusieurs prestations pour obtenir une estimation.",
 "calc_work":"Prestation","calc_qty":"Quantité","calc_unit":"Unité","calc_range":"Estimation","calc_rate":"Tarif indicatif","calc_line_total":"Sous-total","calc_remove":"Supprimer",
-"calc_total":"Estimation indicative du projet","calc_disclaimer":"Prix hors TVA.",
+"calc_total":"Estimation indicative du projet","calc_disclaimer":"L’estimation est indicative et ne constitue pas un devis. Les prix sont indiqués hors TVA. Une offre définitive est établie après évaluation du projet.",
 "calc_quote":"Demander un devis précis","calc_select":"Choisir une prestation",
 "calc_cat_walls":"Murs & peinture","calc_cat_floors":"Sols","calc_cat_tiles":"Carrelage","calc_cat_ext":"Extérieur","calc_cat_demo":"Dépose & démolition","calc_cat_elec":"Électricité","calc_cat_plumb":"Plomberie","calc_cat_kitchen":"Cuisine",
 "work_peinture":"Peinture","work_enduit":"Enduit","work_stratifie":"Sol stratifié","work_parquet":"Parquet","work_vinyle":"Sol vinyle","work_carrelage_sol":"Carrelage au sol","work_carrelage_mur":"Carrelage mural","work_terrasse":"Terrasse","work_facade":"Façade","work_demolition":"Dépose / démolition","work_prise":"Prise électrique","work_luminaire":"Pose de luminaire","work_lavabo":"Pose de lavabo","work_wc":"Pose de WC","work_robinetterie":"Robinetterie","work_cuisine":"Montage / aménagement cuisine",
