@@ -215,7 +215,7 @@ CALC_FR = {
 "calc_provisional":"Tarifs de démonstration provisoires — ils seront remplacés par les tarifs confirmés de Simetrika.",
 "calc_add":"Ajouter des travaux","calc_empty":"Ajoutez une ou plusieurs prestations pour obtenir une estimation.",
 "calc_work":"Prestation","calc_qty":"Quantité","calc_unit":"Unité","calc_range":"Estimation","calc_rate":"Tarif indicatif","calc_line_total":"Sous-total","calc_remove":"Supprimer",
-"calc_total":"Estimation indicative du projet","calc_disclaimer":"Cette estimation est indicative et ne constitue pas une offre. Le prix final dépend notamment de l’état du support, des matériaux choisis, de l’accessibilité et des conditions du chantier. Une offre définitive est établie après évaluation du projet.",
+"calc_total":"Estimation indicative du projet","calc_disclaimer":"Prix hors TVA.",
 "calc_quote":"Demander un devis précis","calc_select":"Choisir une prestation",
 "calc_cat_walls":"Murs & peinture","calc_cat_floors":"Sols","calc_cat_tiles":"Carrelage","calc_cat_ext":"Extérieur","calc_cat_demo":"Dépose & démolition","calc_cat_elec":"Électricité","calc_cat_plumb":"Plomberie","calc_cat_kitchen":"Cuisine",
 "work_peinture":"Peinture","work_enduit":"Enduit","work_stratifie":"Sol stratifié","work_parquet":"Parquet","work_vinyle":"Sol vinyle","work_carrelage_sol":"Carrelage au sol","work_carrelage_mur":"Carrelage mural","work_terrasse":"Terrasse","work_facade":"Façade","work_demolition":"Dépose / démolition","work_prise":"Prise électrique","work_luminaire":"Pose de luminaire","work_lavabo":"Pose de lavabo","work_wc":"Pose de WC","work_robinetterie":"Robinetterie","work_cuisine":"Montage / aménagement cuisine",
@@ -227,7 +227,7 @@ CALC_DE = {
 "calc_provisional":"Vorläufige Testpreise — sie werden später durch die bestätigten Simetrika-Preise ersetzt.",
 "calc_add":"Arbeiten hinzufügen","calc_empty":"Fügen Sie eine oder mehrere Leistungen hinzu, um eine Schätzung zu erhalten.",
 "calc_work":"Leistung","calc_qty":"Menge","calc_unit":"Einheit","calc_range":"Schätzung","calc_rate":"Richtpreis","calc_line_total":"Zwischensumme","calc_remove":"Entfernen",
-"calc_total":"Unverbindliche Projektschätzung","calc_disclaimer":"Diese Schätzung ist unverbindlich und stellt kein Angebot dar. Der endgültige Preis hängt unter anderem vom Zustand des Untergrunds, den gewählten Materialien, der Zugänglichkeit und den Bedingungen auf der Baustelle ab. Ein verbindliches Angebot wird nach Prüfung des Projekts erstellt.",
+"calc_total":"Unverbindliche Projektschätzung","calc_disclaimer":"Preise ohne MwSt.",
 "calc_quote":"Genaues Angebot anfragen","calc_select":"Leistung auswählen",
 "calc_cat_walls":"Wände & Malerarbeiten","calc_cat_floors":"Böden","calc_cat_tiles":"Fliesen","calc_cat_ext":"Außenbereich","calc_cat_demo":"Rückbau & Abbruch","calc_cat_elec":"Elektro","calc_cat_plumb":"Sanitär","calc_cat_kitchen":"Küche",
 "work_peinture":"Malerarbeiten","work_enduit":"Spachtel- / Putzarbeiten","work_stratifie":"Laminat","work_parquet":"Parkett","work_vinyle":"Vinylboden","work_carrelage_sol":"Bodenfliesen","work_carrelage_mur":"Wandfliesen","work_terrasse":"Terrasse","work_facade":"Fassade","work_demolition":"Rückbau / Abbruch","work_prise":"Steckdose","work_luminaire":"Leuchtenmontage","work_lavabo":"Waschbeckenmontage","work_wc":"WC-Montage","work_robinetterie":"Armaturen","work_cuisine":"Küchenmontage / Ausbau",
@@ -239,7 +239,7 @@ CALC_EN = {
 "calc_provisional":"Provisional demonstration prices — these will later be replaced with Simetrika's confirmed rates.",
 "calc_add":"Add work","calc_empty":"Add one or more services to receive an estimate.",
 "calc_work":"Service","calc_qty":"Quantity","calc_unit":"Unit","calc_range":"Estimate","calc_rate":"Indicative rate","calc_line_total":"Subtotal","calc_remove":"Remove",
-"calc_total":"Indicative project estimate","calc_disclaimer":"This estimate is indicative and does not constitute a quotation. The final price depends on factors including the condition of the existing surfaces, materials selected, accessibility and site conditions. A final quotation is provided after the project has been assessed.",
+"calc_total":"Indicative project estimate","calc_disclaimer":"Prices exclude VAT.",
 "calc_quote":"Request a precise quote","calc_select":"Choose a service",
 "calc_cat_walls":"Walls & painting","calc_cat_floors":"Flooring","calc_cat_tiles":"Tiling","calc_cat_ext":"Exterior","calc_cat_demo":"Removal & demolition","calc_cat_elec":"Electrical","calc_cat_plumb":"Plumbing","calc_cat_kitchen":"Kitchen",
 "work_peinture":"Painting","work_enduit":"Plastering / skim coat","work_stratifie":"Laminate flooring","work_parquet":"Parquet flooring","work_vinyle":"Vinyl flooring","work_carrelage_sol":"Floor tiling","work_carrelage_mur":"Wall tiling","work_terrasse":"Terrace","work_facade":"Façade","work_demolition":"Removal / demolition","work_prise":"Electrical socket","work_luminaire":"Light fitting installation","work_lavabo":"Washbasin installation","work_wc":"Toilet installation","work_robinetterie":"Tap / fixture installation","work_cuisine":"Kitchen fitting / installation",
@@ -261,7 +261,7 @@ CALC_LB = {
   "calc_line_total": "Zwëschentotal",
   "calc_remove": "Ewechhuelen",
   "calc_total": "Onverbindlech Schätzung vum Projet",
-  "calc_disclaimer": "Dës Schätzung déngt als Orientéierung an ass keen Devis. Den definitive Präis hänkt ënner anerem vum Zoustand vum Ënnergrond, de gewielte Materialien, der Zougänglechkeet an de Bedéngungen op der Baustell of. En definitiven Devis gëtt no der Bewäertung vum Projet erstallt.",
+  "calc_disclaimer": "Präisser ouni TVA.",
   "calc_quote": "E geneeën Devis ufroen",
   "calc_select": "Eng Leeschtung wielen",
   "calc_cat_walls": "Maueren & Sträichen",
@@ -373,26 +373,6 @@ div[data-testid="stButton"] button{transition:background .18s ease,border-color 
 
 # Draft legal pages for review with the business owner.
 LEGAL_DRAFTS = {
-    "mentions-legales": ("Mentions légales", """
-<h2>Éditeur du site</h2>
-<p><strong>Dénomination et forme juridique :</strong> Simetrika Sàrl — <mark>À confirmer : dénomination officielle et forme juridique</mark></p>
-<p><strong>Siège social :</strong> 1 rue Ermesinde, L-1469 Luxembourg — <mark>À confirmer : adresse actuelle du siège</mark></p>
-<p><strong>RCS Luxembourg :</strong> <mark>À compléter : numéro RCS et extrait récent</mark></p>
-<p><strong>Numéro de TVA :</strong> <mark>À compléter : numéro LU ou statut applicable</mark></p>
-<p><strong>Capital social :</strong> <mark>À compléter : montant figurant dans les documents de la société</mark></p>
-<p><strong>Représentant légal :</strong> <mark>À confirmer : nom et qualité du gérant</mark></p>
-<h2>Activité et autorisation</h2>
-<p><mark>À compléter : activités autorisées, numéro d’autorisation d’établissement, autorité ayant délivré l’autorisation et ses coordonnées. Ajouter les références professionnelles applicables.</mark></p>
-<h2>Coordonnées</h2>
-<p><strong>E-mail :</strong> contact@simetrika.lu — <mark>À confirmer : adresse suivie par l’entreprise</mark></p>
-<p><strong>Téléphone :</strong> <mark>À compléter : numéro professionnel à publier</mark></p>
-<h2>Hébergement et contenu</h2>
-<p><mark>À compléter après le choix de l’hébergement final : nom et coordonnées du prestataire.</mark></p>
-<p><mark>À confirmer : droits d’utilisation du logo, des photos de chantier et des autres contenus publiés.</mark></p>
-<h2>Estimateur de prix</h2>
-<p>L’estimation est indicative et ne constitue pas un devis. Une offre définitive est établie après évaluation du projet.</p>
-<p><mark>À valider avant publication : tarifs réels, TVA incluse ou exclue, matériaux et main-d’œuvre inclus ou exclus, frais éventuels et limites de l’estimation.</mark></p>
-"""),
     "confidentialite": ("Politique de confidentialité", """
 <h2>Responsable du traitement</h2>
 <p>Simetrika Sàrl — <mark>À confirmer : identité et adresse officielles de la société.</mark></p>
@@ -419,10 +399,60 @@ LEGAL_DRAFTS = {
 <p><mark>À compléter après validation : date de mise à jour de la présente politique.</mark></p>
 """),
 }
+LEGAL_NOTICES = {
+  "fr": [
+    "Mentions légales",
+    "<h2>Éditeur du site</h2>\n<p><strong>Dénomination et forme juridique :</strong> Simetrika Sàrl</p>\n<p><strong>Siège social :</strong> 1 rue Ermesinde, L-1469 Luxembourg</p>\n<p><strong>RCS Luxembourg :</strong> B229531</p>\n<p><strong>Numéro de TVA :</strong> LU36117917</p>\n<p><strong>Capital social :</strong> 100 000 EUR</p>\n<p><strong>Représentant légal :</strong> Georgel Rotaru — propriétaire de l’entreprise</p>\n<h2>Activité et autorisation</h2>\n<p>Activités et services commerciaux</p>\n<p><strong>Autorisation d’établissement :</strong> 10180457 / 0 — depuis le 07.05.2025</p>\n<p><mark>À compléter : autorité ayant délivré l’autorisation et ses coordonnées, conformément au document officiel.</mark></p>\n<h2>Coordonnées</h2>\n<p><strong>E-mail :</strong> <a href=\"mailto:contact@simetrika.lu\">contact@simetrika.lu</a></p>\n<p><strong>Téléphone :</strong> <mark>En attente du numéro professionnel.</mark></p>\n<h2>Hébergement et contenu</h2>\n<p><mark>À compléter après le choix de l’hébergement final : nom, adresse et coordonnées du prestataire.</mark></p>\n<p><mark>À confirmer avant publication : auteur et droits d’utilisation du logo, des photos de chantier et des autres contenus ; accords de publication nécessaires et crédits éventuels.</mark></p>\n<h2>Estimateur de prix</h2>\n<p>Prix hors TVA.</p>"
+  ],
+  "de": [
+    "Impressum",
+    "<h2>Herausgeber der Website</h2>\n<p><strong>Firmenname und Rechtsform :</strong> Simetrika Sàrl</p>\n<p><strong>Sitz :</strong> 1 rue Ermesinde, L-1469 Luxembourg</p>\n<p><strong>RCS Luxembourg :</strong> B229531</p>\n<p><strong>Umsatzsteuer-Identifikationsnummer :</strong> LU36117917</p>\n<p><strong>Stammkapital :</strong> 100 000 EUR</p>\n<p><strong>Gesetzlicher Vertreter :</strong> Georgel Rotaru — Unternehmensinhaber</p>\n<h2>Tätigkeit und Genehmigung</h2>\n<p>Gewerbliche Tätigkeiten und Dienstleistungen</p>\n<p><strong>Niederlassungsgenehmigung :</strong> 10180457 / 0 — seit dem 07.05.2025</p>\n<p><mark>Zu ergänzen: ausstellende Behörde und deren Kontaktdaten gemäß dem offiziellen Dokument.</mark></p>\n<h2>Kontaktdaten</h2>\n<p><strong>E-mail :</strong> <a href=\"mailto:contact@simetrika.lu\">contact@simetrika.lu</a></p>\n<p><strong>Telefon :</strong> <mark>Geschäftliche Telefonnummer wird noch ergänzt.</mark></p>\n<h2>Hosting und Inhalte</h2>\n<p><mark>Nach Auswahl des endgültigen Hostinganbieters zu ergänzen: Name, Anschrift und Kontaktdaten des Anbieters.</mark></p>\n<p><mark>Vor Veröffentlichung zu bestätigen: Urheber und Nutzungsrechte für Logo, Baustellenfotos und weitere Inhalte; erforderliche Veröffentlichungsgenehmigungen und gegebenenfalls Urheberangaben.</mark></p>\n<h2>Preisrechner</h2>\n<p>Preise ohne MwSt.</p>"
+  ],
+  "en": [
+    "Legal notice",
+    "<h2>Website publisher</h2>\n<p><strong>Company name and legal form :</strong> Simetrika Sàrl</p>\n<p><strong>Registered office :</strong> 1 rue Ermesinde, L-1469 Luxembourg</p>\n<p><strong>RCS Luxembourg :</strong> B229531</p>\n<p><strong>VAT number :</strong> LU36117917</p>\n<p><strong>Share capital :</strong> 100 000 EUR</p>\n<p><strong>Legal representative :</strong> Georgel Rotaru — company owner</p>\n<h2>Activity and business permit</h2>\n<p>Commercial activities and services</p>\n<p><strong>Business permit :</strong> 10180457 / 0 — since 07.05.2025</p>\n<p><mark>To complete: issuing authority and its contact details, as stated on the official document.</mark></p>\n<h2>Contact details</h2>\n<p><strong>E-mail :</strong> <a href=\"mailto:contact@simetrika.lu\">contact@simetrika.lu</a></p>\n<p><strong>Phone :</strong> <mark>Business phone number pending.</mark></p>\n<h2>Hosting and content</h2>\n<p><mark>To complete once the final hosting provider has been selected: provider name, address and contact details.</mark></p>\n<p><mark>To confirm before publication: authorship and usage rights for the logo, construction photos and other content; any necessary permission to publish and credits.</mark></p>\n<h2>Price estimator</h2>\n<p>Prices exclude VAT.</p>"
+  ],
+  "lb": [
+    "Rechtlech Informatiounen",
+    "<h2>Editeur vun der Websäit</h2>\n<p><strong>Firmennumm a Rechtsform :</strong> Simetrika Sàrl</p>\n<p><strong>Gesellschaftssëtz :</strong> 1 rue Ermesinde, L-1469 Luxembourg</p>\n<p><strong>RCS Luxembourg :</strong> B229531</p>\n<p><strong>TVA-Nummer :</strong> LU36117917</p>\n<p><strong>Gesellschaftskapital :</strong> 100 000 EUR</p>\n<p><strong>Gesetzleche Vertrieder :</strong> Georgel Rotaru — Besëtzer vun der Firma</p>\n<h2>Aktivitéit an Autorisatioun</h2>\n<p>Kommerziell Aktivitéiten a Servicer</p>\n<p><strong>Néierloossungsautorisatioun :</strong> 10180457 / 0 — zënter dem 07.05.2025</p>\n<p><mark>Nach ze ergänzen: ausstellend Autoritéit an hir Kontaktdaten, esou wéi am offiziellen Dokument.</mark></p>\n<h2>Kontaktdaten</h2>\n<p><strong>E-mail :</strong> <a href=\"mailto:contact@simetrika.lu\">contact@simetrika.lu</a></p>\n<p><strong>Telefon :</strong> <mark>Déi professionell Telefonsnummer gëtt nach ergänzt.</mark></p>\n<h2>Hosting an Inhalt</h2>\n<p><mark>Nom Choix vum definitiven Hostingubidder ze ergänzen: Numm, Adress a Kontaktdaten vum Ubidder.</mark></p>\n<p><mark>Virun der Verëffentlechung ze bestätegen: Auteurschaft a Benotzungsrechter fir de Logo, d’Chantierfotoen an déi aner Inhalter; néideg Zoustëmmunge fir d’Verëffentlechung an eventuell Quellennennungen.</mark></p>\n<h2>Präisrechner</h2>\n<p>Präisser ouni TVA.</p>"
+  ]
+}
+LEGAL_UI = {
+  "fr": {
+    "back": "Retour au site",
+    "draft": "VERSION DE TRAVAIL — NON FINALISÉE",
+    "notice": "Les passages surlignés indiquent les informations à compléter ou à confirmer avant publication.",
+    "legal": "Mentions légales · brouillon",
+    "privacy": "Confidentialité & cookies · brouillon"
+  },
+  "de": {
+    "back": "Zurück zur Website",
+    "draft": "ENTWURF — NOCH NICHT ABGESCHLOSSEN",
+    "notice": "Die markierten Stellen sind vor Veröffentlichung zu ergänzen oder zu bestätigen.",
+    "legal": "Impressum · Entwurf",
+    "privacy": "Datenschutz & Cookies · Entwurf"
+  },
+  "en": {
+    "back": "Back to the website",
+    "draft": "DRAFT — NOT FINALISED",
+    "notice": "Highlighted passages indicate information to complete or confirm before publication.",
+    "legal": "Legal notice · draft",
+    "privacy": "Privacy & cookies · draft"
+  },
+  "lb": {
+    "back": "Zréck op d’Websäit",
+    "draft": "ENTWORF — NACH NET OFGESCHLOSS",
+    "notice": "Déi markéiert Passagë weisen Informatiounen, déi virun der Verëffentlechung nach ze ergänzen oder ze bestätege sinn.",
+    "legal": "Rechtlech Informatiounen · Entworf",
+    "privacy": "Dateschutz & Cookien · Entworf"
+  }
+}
+LEGAL_DRAFTS["mentions-legales"] = LEGAL_NOTICES[lang]
+legal_ui = LEGAL_UI[lang]
 legal_page = st.query_params.get("page", "")
 if legal_page in LEGAL_DRAFTS:
     legal_title, legal_body = LEGAL_DRAFTS[legal_page]
-    st.markdown(f"""<main class="legal-page"><a class="legal-back" href="?lang={lang}" target="_self">← Retour au site</a><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><h1>{legal_title}</h1><div class="legal-draft"><strong>VERSION DE TRAVAIL — NON FINALISÉE</strong><br>Document en français à compléter et à valider avec Simetrika avant la mise en ligne définitive. Les passages surlignés indiquent les informations manquantes.</div>{legal_body}</main>""", unsafe_allow_html=True)
+    st.markdown(f"""<main class="legal-page"><a class="legal-back" href="?lang={lang}" target="_self">← {legal_ui["back"]}</a><div class="brand">SIMETRIKA<span class="brand-dot">.</span></div><h1>{legal_title}</h1><div class="legal-draft"><strong>{legal_ui["draft"]}</strong><br>{legal_ui["notice"]}</div>{legal_body}</main>""", unsafe_allow_html=True)
     st.stop()
 
 
@@ -551,4 +581,4 @@ with right:
 st.markdown(f"""<div class="site-footer"><div class="footer-brand"><div class="footer-brand-text">SIMETRIKA<span>.</span></div><span>{L['footer_tagline']}</span></div><div class="footer-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde · L-1469 Luxembourg<br><a href="mailto:contact@simetrika.lu">contact@simetrika.lu</a><br>© 2026</div></div>""",unsafe_allow_html=True)
 
 
-st.markdown(f'''<div class="legal-footer"><a href="?lang={lang}&amp;page=mentions-legales" target="_self">Mentions légales · brouillon</a><a href="?lang={lang}&amp;page=confidentialite" target="_self">Confidentialité &amp; cookies · brouillon</a></div>''', unsafe_allow_html=True)
+st.markdown(f'''<div class="legal-footer"><a href="?lang={lang}&amp;page=mentions-legales" target="_self">{legal_ui["legal"]}</a><a href="?lang={lang}&amp;page=confidentialite" target="_self">{legal_ui["privacy"]}</a></div>''', unsafe_allow_html=True)
