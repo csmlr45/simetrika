@@ -1,0 +1,9 @@
+# Preserve old Webador URLs when the domain moves to Cloudflare
+/ /fr/ 301
+/index.html /fr/ 301
+/nos-services /fr/#services 301
+/nos-services/ /fr/#services 301
+/a-propos-de-simetrika /fr/#apropos 301
+/a-propos-de-simetrika/ /fr/#apropos 301
+/contact /fr/#contact 301
+/contact/ /fr/#contact 301
