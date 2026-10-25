@@ -10,7 +10,7 @@ export async function onRequestPost({request,env}) {
   const name=value("name",150),email=value("email",254),phone=value("phone",80),project=value("project",5000),website=value("website",100),lang=value("lang",8);
   if(website)return reply(200,{ok:true});
   if(!name||name.length>150||!project||project.length>5000||(!email&&!phone)||email.length>254||phone.length>80)return reply(400,{error:"validation"});
-  if(email&&!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email))return reply(400,{error:"email"});
+  if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return reply(400,{error:"email"});
   const endpoint=env.FORMSPREE_ENDPOINT;
   if(!endpoint||!/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(endpoint))return reply(503,{error:"not_configured"});
   try{
