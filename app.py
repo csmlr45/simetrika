@@ -1,5 +1,39 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import smtplib
+import ssl
+from email.message import EmailMessage
+from email.utils import formataddr
+from email.utils import parseaddr
+
+
+def send_contact_email(name, email, phone, project):
+    """Send a website enquiry using server-side SMTP credentials."""
+    cfg = st.secrets["smtp"]
+    sender = cfg.get("username", "contact@simetrika.lu")
+    recipient = cfg.get("recipient", "contact@simetrika.lu")
+    msg = EmailMessage()
+    msg["From"] = formataddr(("Simetrika Website", sender))
+    msg["To"] = recipient
+    msg["Subject"] = "Nouvelle demande de contact — Simetrika"
+    reply_address = parseaddr(email.strip())[1] if email else ""
+    if reply_address and "@" in reply_address and "\n" not in reply_address:
+        msg["Reply-To"] = reply_address
+    msg.set_content(
+        "Nouvelle demande via le formulaire Simetrika\n\n"
+        f"Nom : {name}\n"
+        f"E-mail : {email or '-'}\n"
+        f"Téléphone : {phone or '-'}\n\n"
+        f"Projet :\n{project}\n"
+    )
+    with smtplib.SMTP(cfg.get("host", "smtp.openxchange.eu"), int(cfg.get("port", 587)), timeout=15) as smtp:
+        smtp.ehlo()
+        smtp.starttls(context=ssl.create_default_context())
+        smtp.ehlo()
+        smtp.login(cfg["username"], cfg["password"])
+        smtp.send_message(msg)
+
+
 
 st.set_page_config(page_title="Simetrika | Rénovation au Luxembourg", page_icon="◼", layout="wide", initial_sidebar_state="collapsed")
 
@@ -570,8 +604,17 @@ with right:
  with st.form("contact_form",clear_on_submit=True):
   name=st.text_input(L["name"]);email=st.text_input(L["email"]);phone=st.text_input(L["phone"]);project=st.text_area(L["project"],placeholder=L["project_ph"],height=150)
   if st.form_submit_button(L["send"]+" →"):
-   if name and (email or phone) and project: st.success(L["form_success"])
-   else: st.warning(L["form_warning"])
+   if not (name.strip() and (email.strip() or phone.strip()) and project.strip()):
+    st.warning(L["form_warning"])
+   elif len(name) > 150 or len(email) > 254 or len(phone) > 80 or len(project) > 5000:
+    st.warning("Please shorten your message.")
+   else:
+    try:
+     send_contact_email(name.strip(), email.strip(), phone.strip(), project.strip())
+    except Exception:
+     st.error("L'envoi a échoué. Veuillez nous contacter directement à contact@simetrika.lu.")
+    else:
+     st.success(L["form_success"])
 st.markdown(f"""<div class="site-footer"><div class="footer-brand"><div class="footer-brand-text">SIMETRIKA<span>.</span></div><span>{L['footer_tagline']}</span></div><div class="footer-details"><strong>Simetrika Sàrl</strong><br>1 rue Ermesinde · L-1469 Luxembourg<br><a href="mailto:contact@simetrika.lu">contact@simetrika.lu</a><br>© 2026</div></div>""",unsafe_allow_html=True)
 
 
