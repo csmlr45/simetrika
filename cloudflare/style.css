@@ -72,3 +72,6 @@ body,.site-wrap{font-family:'DM Sans',sans-serif!important;font-weight:400}.site
 
 /* Service accordion links stay immediately below their own description when another card expands */
 .site-wrap .cards>.card>details{margin-top:0!important}.site-wrap .cards>.card{justify-content:flex-start}.site-wrap .cards>.card>p{min-height:0}
+
+/* Align all service accordion triggers at a shared baseline while keeping expanded content below */
+.site-wrap .cards>.card>p{min-height:7.2rem!important;margin-bottom:1rem}.site-wrap .cards>.card>details{margin-top:0!important}.site-wrap .cards>.card>details summary{display:inline-block;cursor:pointer;border:0;outline:0}.site-wrap .cards>.card>details summary:focus-visible{outline:2px solid var(--sage-dark);outline-offset:3px}@media(max-width:700px){.site-wrap .cards>.card>p{min-height:0!important}}
