@@ -67,7 +67,7 @@ export async function onRequestPost({ request, env }) {
     return reply(400, { error: "validation" });
   }
 
-  if (email && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return reply(400, { error: "email" });
   }
 
@@ -91,7 +91,7 @@ export async function onRequestPost({ request, env }) {
     "",
     "Projet :",
     project,
-  ].join("\\n");
+  ].join("\n");
 
   const payload = {
     from: "Simetrika <contact@simetrika.lu>",
