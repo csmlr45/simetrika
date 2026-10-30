@@ -84,3 +84,6 @@ body,.site-wrap{font-family:'DM Sans',sans-serif!important;font-weight:400}.site
 
 /* Project brief layout: work type and optional quantity only. */
 .site-wrap .estimator-row{grid-template-columns:minmax(180px,2fr) minmax(170px,1fr) 40px}.site-wrap .estimator-row .work-field,.site-wrap .estimator-row .qty-field{min-width:0}.estimator-intro{color:var(--muted);line-height:1.6;margin:0 0 1rem}.site-wrap .estimator-row .quantity-control input::placeholder{color:#8a8e8b;opacity:1}@media(max-width:800px){.site-wrap .estimator-row{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}}@media(max-width:520px){.site-wrap .estimator-row{grid-template-columns:1fr}}
+
+/* Keep keyboard focus visible without the square browser outline on the number input. */
+.site-wrap .quantity-control:focus-within{outline:2px solid var(--ink);outline-offset:2px}.site-wrap .quantity-control input:focus{outline:none;border:0;box-shadow:none}
