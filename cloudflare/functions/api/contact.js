@@ -187,8 +187,7 @@ export async function onRequestPost({ request, env }) {
 
     expectCode(await stream.readResponse(), [220]);
     expectCode(await stream.sendLine("EHLO simetrika.lu"), [250]);
-    const startTls = await stream.sendLine("STARTTLS");
-    expectCode(startTls, [220]);
+    expectCode(await stream.sendLine("STARTTLS"), [220]);
     stream.release();
 
     socket = socket.startTls();
@@ -201,15 +200,13 @@ export async function onRequestPost({ request, env }) {
     expectCode(await stream.sendLine(`MAIL FROM:<${SMTP_USER}>`), [250]);
     expectCode(await stream.sendLine(`RCPT TO:<${RECIPIENT}>`), [250, 251]);
     expectCode(await stream.sendLine("DATA"), [354]);
-
-    await stream.sendLine(smtpMessage + "\r\n.");
-    expectCode(await stream.readResponse(), [250]);
-    await stream.sendLine("QUIT");
+    expectCode(await stream.sendLine(smtpMessage + "\r\n."), [250]);
+    expectCode(await stream.sendLine("QUIT"), [221]);
     stream.release();
 
     await socket.close();
     return response(200, { ok: true });
-  } catch (error) {
+  } catch {
     console.error("OX SMTP contact delivery failed");
     try {
       await socket?.close();
