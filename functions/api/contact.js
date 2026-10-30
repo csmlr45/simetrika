@@ -99,7 +99,7 @@ export async function onRequestPost({ request, env }) {
       "simetrika.lu",
       "www.simetrika.lu",
     ];
-    if (!allowedHosts.includes(host) && !host.endsWith(".simetrika.pages.dev")) {
+    if (!allowedHosts.includes(host) && !host.endsWith(".simetrika.pages.dev") && !host.endsWith(".simetrika-7wr.pages.dev")) {
       return response(403, { error: "origin" });
     }
   }
