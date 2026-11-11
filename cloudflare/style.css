@@ -87,3 +87,7 @@ body,.site-wrap{font-family:'DM Sans',sans-serif!important;font-weight:400}.site
 
 /* Keep keyboard focus visible without the square browser outline on the number input. */
 .site-wrap .quantity-control:focus-within{outline:2px solid var(--ink);outline-offset:2px}.site-wrap .quantity-control input:focus{outline:none;border:0;box-shadow:none}
+
+
+/* Mobile project cards: let collapsed galleries use only the space they need. */
+@media(max-width:600px){.site-wrap .portfolio-card{min-height:0}.site-wrap .portfolio-copy{min-height:0;flex:0 0 auto}.site-wrap .portfolio-copy h3,.site-wrap .portfolio-copy>p{min-height:0}.site-wrap .portfolio-more{margin-top:1rem;padding-top:0}}
