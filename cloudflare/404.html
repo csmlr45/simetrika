@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#f7f6f1">
+  <title>Page introuvable | Simetrika</title>
+  <style>
+    :root{color-scheme:light;--ink:#17201b;--sage:#6f7d72;--paper:#f7f6f1}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    main{text-align:center;width:min(100%,560px);padding:clamp(32px,8vw,64px);border:1px solid #dedfd8;border-radius:28px;background:#fff}
+    .brand{font-size:1.2rem;font-weight:800;letter-spacing:-.06em}.brand span{color:#d32f2f}
+    .code{margin:42px 0 0;color:var(--sage);font-size:.85rem;font-weight:700;letter-spacing:.18em}
+    h1{margin:10px 0 14px;font-size:clamp(2rem,8vw,3rem);letter-spacing:-.045em}
+    p{margin:0 auto 28px;max-width:390px;color:#59615c;line-height:1.65}
+    a{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 24px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}
+    a:focus-visible{outline:3px solid #d32f2f;outline-offset:3px}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">SIMETRI<span>K</span>A</div>
+    <div class="code">404</div>
+    <h1 id="title">Page introuvable</h1>
+    <p id="description">Cette adresse n’existe pas ou a été déplacée.</p>
+    <a id="home-link" href="/fr/">Retour à l’accueil</a>
+  </main>
+  <script>
+    const pages = {
+      fr: { title: "Page introuvable", description: "Cette adresse n’existe pas ou a été déplacée.", home: "Retour à l’accueil" },
+      de: { title: "Seite nicht gefunden", description: "Diese Adresse existiert nicht oder wurde verschoben.", home: "Zur Startseite" },
+      en: { title: "Page not found", description: "This address does not exist or has moved.", home: "Back to home" },
+      lb: { title: "Säit net fonnt", description: "Dës Adress gëtt et net oder si gouf verschoben.", home: "Zréck op den Ufank" }
+    };
+    const match = location.pathname.match(/^\/(de|en|lb)(?:\/|$)/);
+    const lang = match ? match[1] : "fr";
+    const copy = pages[lang];
+    document.documentElement.lang = lang;
+    document.getElementById("title").textContent = copy.title;
+    document.getElementById("description").textContent = copy.description;
+    const home = document.getElementById("home-link");
+    home.href = "/" + lang + "/";
+    home.textContent = copy.home;
+  </script>
+</body>
+</html>
