@@ -309,6 +309,9 @@ export async function onRequestPost({ request, env }) {
     } catch {
       // Ignore cleanup errors after a failed SMTP exchange.
     }
-    return response(502, { error: "delivery_failed" });
+    const diagnosticMode = new URL(request.url).searchParams.get("smtp-diagnostic") === "1" && name.startsWith("TEST Simetrika");
+    return response(502, diagnosticMode
+      ? { error: "delivery_failed", diagnostic: { stage: smtpStage, detail: errorDetails } }
+      : { error: "delivery_failed" });
   }
 }
