@@ -309,9 +309,6 @@ export async function onRequestPost({ request, env }) {
     } catch {
       // Ignore cleanup errors after a failed SMTP exchange.
     }
-    const diagnosticMode = new URL(request.url).searchParams.get("smtp-diagnostic") === "1";
-    return response(502, diagnosticMode
-      ? { error: "delivery_failed", diagnostic: { stage: smtpStage, detail: errorDetails } }
-      : { error: "delivery_failed" });
+    return response(502, { error: "delivery_failed" });
   }
 }
