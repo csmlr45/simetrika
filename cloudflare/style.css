@@ -135,3 +135,6 @@ body,.site-wrap{font-family:'DM Sans',sans-serif!important;font-weight:400}.site
     background-position:center,center;
   }
 }
+
+.contact-form input[type=file]{padding:10px;font-size:.9rem}
+.contact-form small{display:block;color:var(--muted);font-size:.82rem;line-height:1.5;margin:-2px 0 12px}
