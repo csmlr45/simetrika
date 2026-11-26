@@ -255,36 +255,55 @@ export async function onRequestPost({ request, env }) {
   const smtpMessage = dotStuff(headers.join("\r\n") + "\r\n\r\n" + emailBody);
 
   let socket;
+  let smtpStage = "connect";
   try {
+    smtpStage = "connect";
     socket = connect(
       { hostname: SMTP_HOST, port: SMTP_PORT },
       { secureTransport: "starttls" },
     );
     let stream = makeSmtpStream(socket);
 
+    smtpStage = "server greeting";
     expectCode(await stream.readResponse(), [220]);
+    smtpStage = "EHLO before TLS";
     expectCode(await stream.sendLine("EHLO simetrika.lu"), [250]);
+    smtpStage = "STARTTLS command";
     expectCode(await stream.sendLine("STARTTLS"), [220]);
     stream.release();
 
+    smtpStage = "TLS handshake";
     socket = socket.startTls();
     stream = makeSmtpStream(socket);
 
+    smtpStage = "EHLO after TLS";
     expectCode(await stream.sendLine("EHLO simetrika.lu"), [250]);
+    smtpStage = "AUTH LOGIN";
     expectCode(await stream.sendLine("AUTH LOGIN"), [334]);
+    smtpStage = "SMTP username authentication";
     expectCode(await stream.sendLine(base64Utf8(SMTP_USER)), [334]);
+    smtpStage = "SMTP password authentication";
     expectCode(await stream.sendLine(base64Utf8(env.OX_SMTP_PASSWORD)), [235]);
+    smtpStage = "MAIL FROM";
     expectCode(await stream.sendLine(`MAIL FROM:<${SMTP_USER}>`), [250]);
+    smtpStage = "RCPT TO";
     expectCode(await stream.sendLine(`RCPT TO:<${RECIPIENT}>`), [250, 251]);
+    smtpStage = "DATA command";
     expectCode(await stream.sendLine("DATA"), [354]);
+    smtpStage = "message body";
     expectCode(await stream.sendLine(smtpMessage + "\r\n."), [250]);
+    smtpStage = "QUIT";
     expectCode(await stream.sendLine("QUIT"), [221]);
     stream.release();
 
+    smtpStage = "socket close";
     await socket.close();
     return response(200, { ok: true });
-  } catch {
-    console.error("OX SMTP contact delivery failed");
+  } catch (error) {
+    const errorDetails = error instanceof Error
+      ? `${error.name}: ${error.message}`.slice(0, 180)
+      : "Unknown SMTP error";
+    console.error("OX SMTP contact delivery failed", JSON.stringify({ stage: smtpStage, error: errorDetails }));
     try {
       await socket?.close();
     } catch {
