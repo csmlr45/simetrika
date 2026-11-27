@@ -124,7 +124,7 @@ export async function onRequestPost({ request, env }) {
     for (const [key, value] of formData.entries()) {
       if (typeof value === "string" && key !== "photos") data[key] = value;
     }
-    photos = formData.getAll("photos").filter((value) => value instanceof File && value.size > 0);
+    photos = formData.getAll("photos").filter((value) => value && typeof value.arrayBuffer === "function" && typeof value.size === "number" && value.size > 0);
   } else {
     const rawBody = await request.text();
     if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
