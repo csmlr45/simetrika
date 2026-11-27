@@ -127,13 +127,14 @@ export async function onRequestPost({ request, env }) {
     photos = formData.getAll("photos").filter((value) => value && typeof value.arrayBuffer === "function" && typeof value.size === "number" && value.size > 0);
   } else {
     const rawBody = await request.text();
-    if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
-      return response(413, { error: "size_request", requestBytes: new TextEncoder().encode(rawBody).byteLength, requestContentType: contentType.split(";")[0] });
+    const rawBodyBytes = new TextEncoder().encode(rawBody).byteLength;
+    if (rawBodyBytes > 12_000) {
+      return response(413, { error: "size_request", requestBytes: rawBodyBytes, requestContentType: contentType.split(";")[0] });
     }
     try {
       data = JSON.parse(rawBody);
     } catch {
-      return response(400, { error: "invalid_json" });
+      return response(400, { error: "invalid_json_request", requestBytes: rawBodyBytes, requestContentType: contentType.split(";")[0] });
     }
     if (!data || typeof data !== "object" || Array.isArray(data)) {
       return response(400, { error: "invalid_data" });
