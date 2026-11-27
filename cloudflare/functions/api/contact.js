@@ -108,7 +108,7 @@ export async function onRequestPost({ request, env }) {
   const contentLength = Number(request.headers.get("Content-Length") || 0);
   const maxRequestBytes = 12 * 1024 * 1024;
   if (contentLength > maxRequestBytes) {
-    return response(413, { error: "size", requestBytes: contentLength, requestContentType: contentType.split(";")[0] });
+    return response(413, { error: "size_request", requestBytes: contentLength, requestContentType: contentType.split(";")[0] });
   }
 
   let data;
@@ -128,7 +128,7 @@ export async function onRequestPost({ request, env }) {
   } else {
     const rawBody = await request.text();
     if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
-      return response(413, { error: "size", requestBytes: new TextEncoder().encode(rawBody).byteLength, requestContentType: contentType.split(";")[0] });
+      return response(413, { error: "size_request", requestBytes: new TextEncoder().encode(rawBody).byteLength, requestContentType: contentType.split(";")[0] });
     }
     try {
       data = JSON.parse(rawBody);
