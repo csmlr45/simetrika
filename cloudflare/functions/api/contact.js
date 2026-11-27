@@ -104,19 +104,40 @@ export async function onRequestPost({ request, env }) {
     }
   }
 
-  const rawBody = await request.text();
-  if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
+  const contentType = request.headers.get("Content-Type") || "";
+  const contentLength = Number(request.headers.get("Content-Length") || 0);
+  const maxRequestBytes = 12 * 1024 * 1024;
+  if (contentLength > maxRequestBytes) {
     return response(413, { error: "size" });
   }
 
   let data;
-  try {
-    data = JSON.parse(rawBody);
-  } catch {
-    return response(400, { error: "invalid_json" });
-  }
-  if (!data || typeof data !== "object" || Array.isArray(data)) {
-    return response(400, { error: "invalid_data" });
+  let photos = [];
+  if (contentType.toLowerCase().includes("multipart/form-data")) {
+    let formData;
+    try {
+      formData = await request.formData();
+    } catch {
+      return response(400, { error: "invalid_form_data" });
+    }
+    data = {};
+    for (const [key, value] of formData.entries()) {
+      if (typeof value === "string" && key !== "photos") data[key] = value;
+    }
+    photos = formData.getAll("photos").filter((value) => value instanceof File && value.size > 0);
+  } else {
+    const rawBody = await request.text();
+    if (new TextEncoder().encode(rawBody).byteLength > 12_000) {
+      return response(413, { error: "size" });
+    }
+    try {
+      data = JSON.parse(rawBody);
+    } catch {
+      return response(400, { error: "invalid_json" });
+    }
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+      return response(400, { error: "invalid_data" });
+    }
   }
 
   const value = (key, max) =>
@@ -152,6 +173,25 @@ export async function onRequestPost({ request, env }) {
     return response(400, { error: "email" });
   }
 
+  if (photos.length > 5) {
+    return response(400, { error: "photos_count" });
+  }
+  const allowedPhotoTypes = new Set([
+    "image/jpeg",
+    "image/png",
+    "image/webp",
+    "image/gif",
+    "image/avif",
+    "image/heic",
+    "image/heif",
+  ]);
+  if (photos.some((file) => !allowedPhotoTypes.has(file.type.toLowerCase()))) {
+    return response(400, { error: "photos_type" });
+  }
+  if (photos.reduce((total, file) => total + file.size, 0) > 10 * 1024 * 1024) {
+    return response(413, { error: "photos_size" });
+  }
+
   if (!env.OX_SMTP_PASSWORD) {
     return response(503, { error: "not_configured" });
   }
@@ -174,16 +214,49 @@ export async function onRequestPost({ request, env }) {
     ...(email ? [`Reply-To: ${email}`] : []),
     "Subject: New contact request - Simetrika",
     "MIME-Version: 1.0",
-    "Content-Type: text/plain; charset=UTF-8",
-    "Content-Transfer-Encoding: base64",
   ];
-  const emailBody = base64Utf8(message).match(/.{1,76}/g)?.join("\\r\\n") || "";
+  let emailBody;
+  if (photos.length) {
+    const boundary = `simetrika-${crypto.randomUUID()}`;
+    headers.push(`Content-Type: multipart/mixed; boundary="${boundary}"`);
+    const parts = [
+      `--${boundary}`,
+      "Content-Type: text/plain; charset=UTF-8",
+      "Content-Transfer-Encoding: base64",
+      "",
+      base64Utf8(message).match(/.{1,76}/g)?.join("\r\n") || "",
+    ];
+    for (const file of photos) {
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      const binary = [];
+      for (let index = 0; index < bytes.length; index += 0x8000) {
+        binary.push(String.fromCharCode(...bytes.subarray(index, index + 0x8000)));
+      }
+      const encodedPhoto = btoa(binary.join("")).match(/.{1,76}/g)?.join("\r\n") || "";
+      const safeName = file.name.replace(/[^A-Za-z0-9._-]/g, "_").slice(0, 100) || "photo";
+      parts.push(
+        `--${boundary}`,
+        `Content-Type: ${file.type.toLowerCase()}`,
+        "Content-Transfer-Encoding: base64",
+        `Content-Disposition: attachment; filename="${safeName}"`,
+        "",
+        encodedPhoto,
+      );
+    }
+    parts.push(`--${boundary}--`);
+    emailBody = parts.join("\r\n");
+  } else {
+    headers.push(
+      "Content-Type: text/plain; charset=UTF-8",
+      "Content-Transfer-Encoding: base64",
+    );
+    emailBody = base64Utf8(message).match(/.{1,76}/g)?.join("\r\n") || "";
+  }
   const smtpMessage = dotStuff(headers.join("\r\n") + "\r\n\r\n" + emailBody);
 
   let socket;
   let smtpStage = "connect";
   try {
-    smtpStage = "connect";
     socket = connect(
       { hostname: SMTP_HOST, port: SMTP_PORT },
       { secureTransport: "starttls" },
@@ -194,7 +267,7 @@ export async function onRequestPost({ request, env }) {
     expectCode(await stream.readResponse(), [220]);
     smtpStage = "EHLO before TLS";
     expectCode(await stream.sendLine("EHLO simetrika.lu"), [250]);
-    smtpStage = "STARTTLS command";
+    smtpStage = "STARTTLS";
     expectCode(await stream.sendLine("STARTTLS"), [220]);
     stream.release();
 
@@ -202,19 +275,18 @@ export async function onRequestPost({ request, env }) {
     socket = socket.startTls();
     stream = makeSmtpStream(socket);
 
-    smtpStage = "EHLO after TLS";
     expectCode(await stream.sendLine("EHLO simetrika.lu"), [250]);
     smtpStage = "AUTH LOGIN";
     expectCode(await stream.sendLine("AUTH LOGIN"), [334]);
-    smtpStage = "SMTP username authentication";
+    smtpStage = "SMTP username";
     expectCode(await stream.sendLine(base64Utf8(SMTP_USER)), [334]);
-    smtpStage = "SMTP password authentication";
+    smtpStage = "SMTP password";
     expectCode(await stream.sendLine(base64Utf8(env.OX_SMTP_PASSWORD)), [235]);
     smtpStage = "MAIL FROM";
     expectCode(await stream.sendLine(`MAIL FROM:<${SMTP_USER}>`), [250]);
     smtpStage = "RCPT TO";
     expectCode(await stream.sendLine(`RCPT TO:<${RECIPIENT}>`), [250, 251]);
-    smtpStage = "DATA command";
+    smtpStage = "DATA";
     expectCode(await stream.sendLine("DATA"), [354]);
     smtpStage = "message body";
     expectCode(await stream.sendLine(smtpMessage + "\r\n."), [250]);
@@ -222,19 +294,19 @@ export async function onRequestPost({ request, env }) {
     expectCode(await stream.sendLine("QUIT"), [221]);
     stream.release();
 
-    smtpStage = "socket close";
     await socket.close();
     return response(200, { ok: true });
   } catch (error) {
-    const errorDetails = error instanceof Error
-      ? `${error.name}: ${error.message}`.slice(0, 180)
-      : "Unknown SMTP error";
-    console.error("OX SMTP contact delivery failed", JSON.stringify({ stage: smtpStage, error: errorDetails }));
+    const smtpCode = error instanceof Error ? Number(/code (\\d+)/.exec(error.message)?.[1] || 0) || null : null;
+    console.error("OX SMTP contact delivery failed", JSON.stringify({ stage: smtpStage, smtpCode }));
     try {
       await socket?.close();
     } catch {
       // Ignore cleanup errors after a failed SMTP exchange.
     }
-    return response(502, { error: "delivery_failed" });
+    const diagnosticMode = new URL(request.url).searchParams.get("smtp-diagnostic") === "1" && name.startsWith("TEST Simetrika");
+    return response(502, diagnosticMode
+      ? { error: "delivery_failed", diagnostic: { stage: smtpStage, smtpCode, errorType: error instanceof Error ? error.name : "Unknown" } }
+      : { error: "delivery_failed" });
   }
 }
